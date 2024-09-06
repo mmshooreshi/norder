@@ -22,8 +22,11 @@ useHead({
       {{ t('about.summary') }}
     </p>
 
-    <p class="mt-5">
+    <div class="mt-5">
+    <p>
       {{ t('about.features') }}
+    </p>
+
       <ul list>
         <li>Nuxt 3</li>
         <li>Vue 3</li>
@@ -35,7 +38,7 @@ useHead({
         <li>Pinia</li>
         <li>Nuxt i18n</li>
       </ul>
-    </p>
+    </div>
 
     <p class="mt-5">
       {{ t('about.config') }}
