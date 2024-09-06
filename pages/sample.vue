@@ -6,7 +6,7 @@ definePageMeta({
 })
 
 useHead({
-  title: `${t('global.sample')} • Norder`,
+  title: `${t('global.sample')} • Nightrunner`,
 })
 </script>
 

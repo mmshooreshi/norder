@@ -10,7 +10,7 @@ const locales = fs.readdirSync('locales')
 export default defineNuxtConfig({
   app: {
     head: {
-      title: 'Norder',
+      title: 'Nightrunner',
       link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     },
   },

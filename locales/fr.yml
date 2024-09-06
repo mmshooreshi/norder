@@ -2,14 +2,14 @@ global:
   about: À propos
   sample: Test
 main:
-  title: Bienvenue, Norder
+  title: Bienvenue, Nightrunner
 about:
-  title: À propos de Norder
+  title: À propos de Nightrunner
   summary: >-
-    Norder est un starter template simple, rapide et prêt à l'emploi
+    Nightrunner est un starter template simple, rapide et prêt à l'emploi
     pour Nuxt 3. Il contient les outils nécessaires pour vous permettre de
     démarrer immédiatement votre prochain projet.
-  features: 'Norder est basé sur les technologies suivantes :'
+  features: 'Nightrunner est basé sur les technologies suivantes :'
   config: >-
     En plus de cela, il contient de petits assistants pour faciliter la
     localisation, le thème et même une configuration logique

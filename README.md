@@ -1,11 +1,11 @@
-# 🌘 Norder
+# 🌘 Nightrunner
 
-Norder is a simple, fast, and ready to use starter template for Nuxt 3.
+Nightrunner is a simple, fast, and ready to use starter template for Nuxt 3.
 It features the necessary tools to get you started immediately on your next project.
 
 ## Summary
 
-- [🌘 Norder](#-Norder)
+- [🌘 Nightrunner](#-nightrunner)
   - [Summary](#summary)
   - [🚀 Quick start](#-quick-start)
   - [✨ Features](#-features)
@@ -24,22 +24,22 @@ It features the necessary tools to get you started immediately on your next proj
 
 1. **Get pnpm.**
 
-    Norder uses [pnpm](https://pnpm.io/) as its package manager. You can install it with the following command:
+    Nightrunner uses [pnpm](https://pnpm.io/) as its package manager. You can install it with the following command:
     ```bash
     npm install -g pnpm
     ```
 
-2. **Create a Norder project.**
+2. **Create a Nightrunner project.**
 
-    Use the Norder template to create a new project:
+    Use the Nightrunner template to create a new project:
 
     ```bash
-    npx degit "notKamui/Norder" my-project
+    npx degit "notKamui/Nightrunner" my-project
     ```
 
-3. **Replace all the occurrences of `Norder` with your project's name.**
+3. **Replace all the occurrences of `Nightrunner` with your project's name.**
 
-    This includes both `Norder` and `Norder`. Also, **DO NOT FORGET TO UPDATE THE [LICENSE](LICENSE) FILE**, otherwise, I'll be in legal possession of your project, which isn't good for you.
+    This includes both `Nightrunner` and `nightrunner`. Also, **DO NOT FORGET TO UPDATE THE [LICENSE](LICENSE) FILE**, otherwise, I'll be in legal possession of your project, which isn't good for you.
 
 3. **Start developing.**
 
@@ -55,13 +55,13 @@ It features the necessary tools to get you started immediately on your next proj
     pnpm taze
     ```
 
-4. **Enjoy your new Norder project!**
+4. **Enjoy your new Nightrunner project!**
 
     Your site is now running at `http://localhost:3000`!
 
 ## ✨ Features
 
-Norder uses the following technologies:
+Nightrunner uses the following technologies:
 
 - [Nuxt 3](https://v3.nuxtjs.org/)
 - [Vue 3](https://v3.vuejs.org/)
@@ -79,9 +79,9 @@ For more information on each of these, please refer to their respective document
 
 ### 🛠️ Configurations
 
-For each of the included technologies, Norder provides a basic setup that you can use as a starting point for your project.
+For each of the included technologies, Nightrunner provides a basic setup that you can use as a starting point for your project.
 
-Norder uses Nuxt 3 in SSR Mode by default, but you can use full static mode by uncommenting the marked line in the [nuxt.config.ts](nuxt.config.ts) file.
+Nightrunner uses Nuxt 3 in SSR Mode by default, but you can use full static mode by uncommenting the marked line in the [nuxt.config.ts](nuxt.config.ts) file.
 
 Moreover, a default UnoCSS configuration is provided in the [unocss.config.ts](unocss.config.ts) file.
 
@@ -95,7 +95,7 @@ Pinia stores are stored in the `stores` directory, and are automatically registe
 
 ### 🌐 Localization
 
-Norder uses Nuxt i18n for localization. The default language is the system's language, and English is the fallback, but it can be changed. You can add as many locales as you want by creating a file in the `locales` directory, following the same scheme as the already provided files.
+Nightrunner uses Nuxt i18n for localization. The default language is the system's language, and English is the fallback, but it can be changed. You can add as many locales as you want by creating a file in the `locales` directory, following the same scheme as the already provided files.
 
 To interact with it, there are several files and composables available to you:
 
@@ -110,7 +110,7 @@ For more information on Nuxt i18n, please refer to the [documentation](https://v
 
 ### 🖌️ Theme: Light and Dark
 
-Norder provides a basic theme system, with a light and a dark theme. The theme can be interacted with thanks to the `useDark` composable, which provides a ref to the current theme, a boolean ref to know if the current theme is dark, the user's preferred theme, and a function to toggle the theme. The current theme is stored and persisted in locale storage. When the ref is updated, the locale storage is updated as well.
+Nightrunner provides a basic theme system, with a light and a dark theme. The theme can be interacted with thanks to the `useDark` composable, which provides a ref to the current theme, a boolean ref to know if the current theme is dark, the user's preferred theme, and a function to toggle the theme. The current theme is stored and persisted in locale storage. When the ref is updated, the locale storage is updated as well.
 
 Along with the locale storage, the theme is also stored as a class on the `html` element. This allows you to use CSS variables to style your app, and have the theme change automatically when the user changes it. In particular, this works well with UnoCSS (or Tailwind-like CSS frameworks) with the `dark:` pseudo-class prefix.
 
