@@ -1,6 +1,7 @@
 global:
   about: 詳細
   sample: サンプル
+  menu: Menu
 main:
   title: ようこそ、Nightrunner
 about:

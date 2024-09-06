@@ -1,6 +1,7 @@
 global:
   about: À propos
   sample: Test
+  menu: Menu
 main:
   title: Bienvenue, Nightrunner
 about:

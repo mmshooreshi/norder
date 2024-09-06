@@ -1,17 +1,49 @@
 global:
   about: About
   sample: Sample
+  menu: Menu
+  close: Close
+  watch: Watch on YouTube
+  order: Order
+  price: Price
+  ingredients: Ingredients
+  instructions: Instructions
+  tags: Tags
+  category: Category
+
 main:
-  title: Welcome, Nightrunner
+  title: Welcome to Norder
+
 about:
-  title: About Nightrunner
+  title: About Our Restaurant
   summary: >-
-    Nightrunner is a simple, fast, and ready to use starter template for Nuxt 3.
-    It features the necessary tools to get you started immediately on your next project.
-  features: 'Nightrunner uses the following technologies:'
+    Our restaurant offers a unique dining experience with a blend of traditional and modern cuisine.
+    We are committed to using the freshest ingredients and providing exceptional service to our guests.
+  features: 'Our menu features a variety of dishes to satisfy all tastes:'
   config: >-
-    On top of that, it contains little helpers to help with localization,
-    color schemes, and even a sensible configuration for ESLint and VSCode.
+    From appetizers to desserts, explore our menu and enjoy a delightful culinary journey.
+    You can customize your order, add special notes, and even watch videos for some of our featured dishes.
+
 theme:
   dark: Dark
   light: Light
+
+menu:
+  header: Our Menu
+  categories:
+    appetizers: Appetizers
+    mains: Main Courses
+    desserts: Desserts
+    drinks: Drinks
+  item:
+    details: Item Details
+    price: Price
+    order_button: Order Now
+    description: Description
+    back_button: Back to Menu
+    add_note: Add Special Notes
+
+order:
+  confirm: Are you sure you want to place this order?
+  success: Your order has been placed successfully!
+  cancel: Cancel
