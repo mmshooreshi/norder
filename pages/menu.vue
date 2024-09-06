@@ -13,7 +13,7 @@
             <div
               v-for="item in items"
               :key="item.idMeal"
-              class="bg-gray-800 shadow-md rounded-lg overflow-hidden transform transition hover:scale-105 cursor-pointer"
+              class="bg-gray-500 shadow-md rounded-lg overflow-hidden transform transition hover:scale-105 cursor-pointer"
               @click="openItemDetails(item)"
             >
               <img :src="item.strMealThumb" :alt="item.strMeal" class="w-full h-40 object-cover" />
@@ -31,7 +31,7 @@
   
       <!-- Item Details Modal -->
       <div v-if="selectedItem" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 p-4 overflow-auto">
-        <div class="bg-gray-800 p-6 rounded-lg w-full max-w-lg relative mt-12 shadow-lg max-h-80vh overflow-auto">
+        <div class="bg-gray-500 p-6 rounded-lg w-full max-w-lg relative mt-12 shadow-lg max-h-80vh overflow-auto">
           <button class="absolute top-2 right-2 text-red-500" @click="selectedItem = null">✖ {{ $t('global.close') }}</button>
           <h2 class="text-2xl font-bold mb-2">{{ selectedItem.strMeal }}</h2>
           <img :src="selectedItem.strMealThumb" alt="Meal Image" class="w-full h-40 object-cover mb-4" />
@@ -58,7 +58,7 @@
           <!-- Tags -->
           <div v-if="selectedItem.strTags" class="mb-4">
             <h3 class="text-xl font-semibold mb-2">{{ $t('global.tags') }}</h3>
-            <p class="bg-gray-800 text-teal">{{ selectedItem.strTags.split(',').join(', ') }}</p>
+            <p class="bg-gray-500 text-teal">{{ selectedItem.strTags.split(',').join(', ') }}</p>
           </div>
   
           <!-- Links -->
