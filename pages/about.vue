@@ -23,9 +23,9 @@ useHead({
     </p>
 
     <div class="mt-5">
-    <p>
-      {{ t('about.features') }}
-    </p>
+      <p>
+        {{ t('about.features') }}
+      </p>
 
       <ul list>
         <li>Nuxt 3</li>

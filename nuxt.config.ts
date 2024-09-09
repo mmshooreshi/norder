@@ -11,7 +11,8 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: 'Nightrunner',
-      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }, { rel: 'preload', href: '/fonts/picoopic-Regular.woff2', as: 'font', type: 'font/woff2', crossorigin: 'anonymous' }, { rel: 'preload', href: '/fonts/picoopic-Bold.woff2', as: 'font', type: 'font/woff2', crossorigin: 'anonymous' }, { rel: 'preload', href: '/fonts/picoopic-ExtraBold.woff2', as: 'font', type: 'font/woff2', crossorigin: 'anonymous' }, { rel: 'preload', href: '/fonts/picoopic-Light.woff2', as: 'font', type: 'font/woff2', crossorigin: 'anonymous' }, { rel: 'preload', href: '/fonts/picoopic-Medium.woff2', as: 'font', type: 'font/woff2', crossorigin: 'anonymous' }, { rel: 'preload', href: '/fonts/picoopic-Thin.woff2', as: 'font', type: 'font/woff2', crossorigin: 'anonymous' }],
+
     },
   },
 
@@ -55,18 +56,11 @@ export default defineNuxtConfig({
   ],
 
   // plugin configurations
-  modules: [
-    '@nuxtjs/i18n',
-    '@vueuse/nuxt',
-    '@unocss/nuxt',
-    '@nuxtjs/critters',
-    '@nuxtjs/color-mode',
-    '@pinia/nuxt',
-  ],
+  modules: ['@nuxtjs/i18n', '@vueuse/nuxt', '@unocss/nuxt', '@nuxtjs/critters', '@nuxtjs/color-mode', '@pinia/nuxt', '@nuxt/fonts'],
 
   i18n: {
     langDir: 'locales',
-    defaultLocale: 'en',
+    defaultLocale: 'fa',
     locales,
   },
 
@@ -79,4 +73,24 @@ export default defineNuxtConfig({
   },
 
   compatibilityDate: '2024-09-06',
+
+  fonts: {
+    families: [
+      {
+        name: 'Picoopic',
+        src: [
+          { url: '/fonts/picoopic-Regular.woff2', weight: '400', style: 'normal' },
+          { url: '/fonts/picoopic-Bold.woff2', weight: '700', style: 'normal' },
+          { url: '/fonts/picoopic-ExtraBold.woff2', weight: '800', style: 'normal' },
+          { url: '/fonts/picoopic-Light.woff2', weight: '300', style: 'normal' },
+          { url: '/fonts/picoopic-Medium.woff2', weight: '500', style: 'normal' },
+          { url: '/fonts/picoopic-Thin.woff2', weight: '100', style: 'normal' },
+        ],
+      },
+    ],
+  },
+
+  devtools: {
+    enabled: true,
+  },
 })

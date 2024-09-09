@@ -1,137 +1,212 @@
 <template>
-    <div class="p-8">
-      <!-- Header Section -->
-      <header class="mb-6">
-        <h1 class="text-3xl font-bold text-center">{{ $t('global.menu') }}</h1>
-      </header>
-  
-      <!-- Grouped Menu Items by Category -->
-      <main>
-        <div v-for="(items, category) in groupedMenuItems" :key="category" class="mb-8">
-          <h2 class="text-2xl font-semibold mb-4">{{ category }}</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            <div
-              v-for="item in items"
-              :key="item.idMeal"
-              class="bg-gray-500 shadow-md rounded-lg overflow-hidden transform transition hover:scale-105 cursor-pointer"
-              @click="openItemDetails(item)"
-            >
-              <img :src="item.strMealThumb" :alt="item.strMeal" class="w-full h-40 object-cover" />
-              <div class="p-4 pr-3">
-                <h3 class="text-lg font-semibold mb-2 flex justify-between">
-                  {{ item.strMeal }}
-                  <span class="text-sm font-normal text-teal whitespace-nowrap">{{ $t('global.price') }}: ${{ getPrice(item) }}</span>
-                </h3>
-                <p class="text-sm text-gray-500">{{ item.strCategory }}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </main>
-  
-      <!-- Item Details Modal -->
-      <div v-if="selectedItem" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 p-4 overflow-auto">
-        <div class="bg-gray-500 p-6 rounded-lg w-full max-w-lg relative mt-12 shadow-lg max-h-80vh overflow-auto">
-          <button class="absolute top-2 right-2 text-red-500" @click="selectedItem = null">✖ {{ $t('global.close') }}</button>
-          <h2 class="text-2xl font-bold mb-2">{{ selectedItem.strMeal }}</h2>
-          <img :src="selectedItem.strMealThumb" alt="Meal Image" class="w-full h-40 object-cover mb-4" />
-  
-          <!-- Price -->
-          <h3 class="text-lg font-semibold mb-2 text-teal bg-gray-600 px-2 cursor-pointer hover:bg-gray-900 rounded-lg w-max">{{ $t('global.price') }}: ${{ getPrice(selectedItem) }}</h3>
-  
-          <!-- Ingredients and Measures -->
-          <h3 class="text-xl font-semibold mb-2">{{ $t('global.ingredients') }}</h3>
-          <ul class="mb-0 max-h-32 overflow-auto">
-            <li v-for="(ingredient, index) in ingredients" :key="index" class="flex justify-between">
-              <span>{{ ingredient }}</span>
-              <span>{{ measures[index] }}</span>
-            </li>
-          </ul>
-          <hr class="mt-0 mb-4 border-white/25"/>
-  
-          <!-- Instructions -->
-          <h3 class="text-xl font-semibold mb-2">{{ $t('global.instructions') }}</h3>
-          <p class="mb-0 text-sm max-h-32 overflow-auto rounded-lg">{{ selectedItem.strInstructions }}</p>
-  
-          <hr class="mt-0 mb-4 border-white/25"/>
-  
-          <!-- Tags -->
-          <div v-if="selectedItem.strTags" class="mb-4">
-            <h3 class="text-xl font-semibold mb-2">{{ $t('global.tags') }}</h3>
-            <p class="bg-gray-500 text-teal">{{ selectedItem.strTags.split(',').join(', ') }}</p>
-          </div>
-  
-          <!-- Links -->
-          <div class="mt-4 mb-6">
-            <a v-if="selectedItem.strYoutube" :href="selectedItem.strYoutube" target="_blank" class="text-blue-500 underline mr-4">{{ $t('global.watch') }}</a>
-            <a v-if="selectedItem.strSource" :href="selectedItem.strSource" target="_blank" class="text-blue-500 underline">{{ $t('global.source') }}</a>
-          </div>
-  
-          <!-- Order Button -->
-          <button class="bg-green-500 text-white py-2 px-4 rounded-md w-full font-semibold hover:bg-green-600" @click="orderItem(selectedItem)">
-            {{ $t('global.order') }}
-          </button>
+  <div :class="directionClass" class=" max-w-screen m-8 p-4 max-h-screen" @scroll="handleScroll">
+    <!-- Fixed horizontal pane showing current category -->
+    
+    <header class="mb-6 pt-4">
+      <!-- Adjust padding to make room for the fixed pane -->
+      <h1 class="text-3xl font-bold text-center">
+        {{ $t('global.menu') }}
+      </h1>
+    </header>
+
+    <div class=" sticky top-0 z-50 mt-4 p-2 bg-accent/25 dark:bg-dark-accent/25  rounded-lg mb-0 ">
+  <div class="flex gap-2 overflow-x-auto items-center">
+    <!-- Display the current category and clickable headers -->
+    <!-- <span class="font-semibold mx-2 text-white">{{ currentCategory }}</span> -->
+    <button
+      v-for="(items, category) in groupedMenuItems"
+      :key="category"
+      class="rounded-md bg-primary/50  text-text dark:text-dark-text px-4 py-1 transition-colors duration-200 cursor-pointer "
+      :class="category === currentCategory ? 'bg-accent/50' : 'bg-transparent text-primary dark:text-dark-primary'"
+      @click="scrollToCategory(category)"
+    >
+      {{ category }}
+    </button>
+  </div>
+</div>
+
+      <main id="menu-container" class="overflow-auto max-h-[calc(100vh-100px)]" @scroll="handleScroll">
+
+      <div v-for="(items, category) in groupedMenuItems" :key="category" :ref="setCategoryRef(category)" class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">
+          {{ category }}
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <!-- Listen to the 'select' event from each MenuItem component -->
+          <MenuItem v-for="item in items" :key="item.idMeal" :item="item" @select="openItemDetails" />
         </div>
       </div>
+    </main>
+
+    <!-- Conditionally render the overlay and modal -->
+    <div v-if="selectedItem" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4">
+      <!-- The transition only affects the modal content -->
+      <transition name="modal" appear>
+        <ItemDetailsModal 
+          v-show="selectedItem"  
+          :item="selectedItem"
+          @close="closeItemDetails"
+          @order="orderItem"
+        />
+      </transition>
     </div>
-  </template>
-  
-  <script setup>
-  import { ref, onMounted, computed } from 'vue'
-  
-  const menuItems = ref([])
-  const selectedItem = ref(null)
-  
-  // Function to simulate getting a price for each item
-  const getPrice = (item) => {
-    const basePrice = 10;
-    const randomFactor = Math.random() * 10;
-    return (basePrice + randomFactor).toFixed(2);
+  </div>
+</template>
+
+<script setup>
+import { ref, computed, onMounted, nextTick } from 'vue';
+import { fetchMenuItems } from '@/utils/menuService';
+import MenuItem from '@/components/MenuItem.vue';
+import ItemDetailsModal from '@/components/ItemDetailsModal.vue';
+import { useI18n } from 'vue-i18n';
+
+const { locale } = useI18n();
+
+const menuItems = ref([]);
+const selectedItem = ref(null);
+const currentCategory = ref('');
+const categoryRefs = ref({});
+
+onMounted(async () => {
+  menuItems.value = await fetchMenuItems();
+  await nextTick();
+  updateCurrentCategory();
+});
+
+const groupedMenuItems = computed(() => {
+  return menuItems.value.reduce((groups, item) => {
+    if (!groups[item.strCategory]) {
+      groups[item.strCategory] = [];
+    }
+    groups[item.strCategory].push(item);
+    return groups;
+  }, {});
+});
+
+function openItemDetails(item) {
+  selectedItem.value = item; // Set the selected item to show its details
+}
+
+function closeItemDetails() {
+  selectedItem.value = null; // Clear the selected item to close the modal
+}
+
+function orderItem(item) {
+  alert(`${$t('order.confirm')} ${item.strMeal}! ${$t('global.price')}: $${item.price}`);
+  selectedItem.value = null; // Clear the selected item after ordering
+}
+
+const directionClass = computed(() => (locale.value === 'fa' ? 'rtl' : 'ltr'));
+
+// Function to set refs for each category
+function setCategoryRef(category) {
+  return (el) => {
+    if (el) {
+      categoryRefs.value[category] = el;
+    }
+  };
+}
+
+// Scroll to a specific category when a button is clicked
+// function scrollToCategory(category) {
+//   const element = categoryRefs.value[category];
+//   if (element) {
+//     element.scrollIntoView({ behavior: 'smooth' });
+//   }
+// }
+function scrollToCategory(category) {
+  const element = categoryRefs.value[category];
+  const menuContainer = document.getElementById('menu-container'); // Use the correct scrolling element
+  if (element && menuContainer) {
+    // Get the offset position of the element relative to the menu container
+    const offsetTop = element.offsetTop - menuContainer.offsetTop;
+
+    // Get the height of the sticky header dynamically
+    const headerHeight = document.querySelector('.sticky').offsetHeight || 60; // Adjust height dynamically
+
+    // Scroll the menu container to the target element considering the header height
+    menuContainer.scrollTo({
+      top: offsetTop - headerHeight +30, // Adjust 20 pixels more for some spacing
+      behavior: 'smooth',
+    });
   }
-  
-  const fetchMenuItems = async () => {
-    try {
-      const response = await fetch('https://www.themealdb.com/api/json/v1/1/search.php?f=c')
-      const data = await response.json()
-      menuItems.value = data.meals || []
-    } catch (error) {
-      console.error('Error fetching menu items:', error)
+}
+
+
+
+
+// Update current category based on scroll position
+function handleScroll() {
+  updateCurrentCategory();
+}
+
+function updateCurrentCategory() {
+  const menuContainer = document.getElementById('menu-container');
+  if (!menuContainer) {
+    console.error('Menu container not found.');
+    return;
+  }
+
+  const scrollPosition = menuContainer.scrollTop; // Use scrollTop of the specific container
+  console.log('Scroll position in container:', scrollPosition);
+
+  let foundCategory = false;
+
+  for (const [category, element] of Object.entries(categoryRefs.value)) {
+    if (!element) {
+      console.warn(`Element not found for category: ${category}`);
+      continue;
+    }
+
+    const { offsetTop, offsetHeight } = element;
+    const relativeOffsetTop = offsetTop - menuContainer.offsetTop; // Calculate offset relative to container
+    console.log(`Category: ${category}, Offset Top: ${relativeOffsetTop}, Offset Height: ${offsetHeight}`);
+
+    // Check if the scroll position is within the element's range
+    if (scrollPosition >= relativeOffsetTop - 100 && scrollPosition < relativeOffsetTop + offsetHeight - 100) {
+      console.log(`Current category set to: ${category}`);
+      currentCategory.value = category;
+      foundCategory = true;
+      break;
     }
   }
-  
-  const openItemDetails = (item) => {
-    selectedItem.value = item
+
+  if (!foundCategory) {
+    console.warn('No matching category found for the current scroll position.');
   }
+}
+</script>
+
+<style scoped>
+/* Updated animation classes for smoother and springy effect */
+.modal-enter-active,
+.modal-leave-active {
+  transition: transform 0.4s cubic-bezier(0.22, 1.61, 0.36, 1); /* Springy effect with smoother transition */
+}
+
+.modal-enter-from,
+.modal-leave-to {
+  transform: scale(0.8); /* Smaller scale at the start and end */
+}
+
+.modal-enter-to,
+.modal-leave-from {
+  transform: scale(1); /* Full size when visible */
+}
+
+/* Styles for the fixed horizontal pane */
+.fixed-pane {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
   
-  const orderItem = (item) => {
-    alert(`${$t('order.confirm')} ${item.strMeal}! ${$t('global.price')}: $${getPrice(item)}`)
-    selectedItem.value = null
-  }
-  
-  const groupedMenuItems = computed(() => {
-    return menuItems.value.reduce((groups, item) => {
-      if (!groups[item.strCategory]) {
-        groups[item.strCategory] = []
-      }
-      groups[item.strCategory].push(item)
-      return groups
-    }, {})
-  })
-  
-  const ingredients = computed(() => {
-    if (!selectedItem.value) return []
-    return Array.from({ length: 20 }, (_, i) => selectedItem.value[`strIngredient${i + 1}`]).filter(Boolean)
-  })
-  
-  const measures = computed(() => {
-    if (!selectedItem.value) return []
-    return Array.from({ length: 20 }, (_, i) => selectedItem.value[`strMeasure${i + 1}`]).filter(Boolean)
-  })
-  
-  onMounted(fetchMenuItems)
-  </script>
-  
-  <style scoped>
-  /* Optional: Add any custom styles here */
-  </style>
-  
+  /* background: white; */
+  padding: 8px;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+}
+</style>

@@ -10,6 +10,8 @@ global:
   instructions: Instructions
   tags: Tags
   category: Category
+  price_unit: $
+  source: Source
 
 main:
   title: Welcome to Norder

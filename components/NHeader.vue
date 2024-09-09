@@ -5,14 +5,16 @@ const { t } = useCustomI18n()
 
 <template>
   <header class="p-5 w-full flex-center flex-row justify-between absolute">
-    <p class="text-8 font-text">
-      <ClientOnly>
-        {{ isDark ? t('theme.dark') : t('theme.light') }}
-        <template #fallback>
-          ...
-        </template>
-      </ClientOnly>
-    </p>
+    <NuxtLink to="/" class="text-8 font-text">
+      <p class="text-8 font-text">
+        <ClientOnly>
+          {{ isDark ? t('theme.dark') : t('theme.light') }}
+          <template #fallback>
+            ...
+          </template>
+        </ClientOnly>
+      </p>
+    </NuxtLink>
     <div class="flex flex-row gap-2">
       <LocaleSwitch />
       <button class="icon-btn text-5" @click="toggle()">

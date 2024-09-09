@@ -1,6 +1,6 @@
 import type { Ref } from 'vue'
 
-export default function useLocale(fallback = 'en'): Ref<string> {
+export default function useLocale(fallback = 'fa'): Ref<string> {
   const preferredLanguages = usePreferredLanguages()
 
   const locale = preferredLanguages.value.find(language => availableLocales.includes(language)) // try to find exact match
