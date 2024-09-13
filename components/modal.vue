@@ -1,6 +1,6 @@
 <template>
   <div ref="modalContent"
-    class="modal-content bg-background dark:bg-dark-background p-4 pt-6 rounded-lg w-full max-w-lg relative mt-2 mb-2 shadow-lg h-[90vh] overflow-hidden">
+    class="modal-content bg-background dark:bg-dark-background p-4 pt-6 rounded-lg w-full max-w-lg relative mt-2 mb-2 shadow-lg overflow-hidden">
     <button 
       class="close-button absolute top-2 right-2 text-red-500 text-lg rounded-lg p-1 transition-transform duration-300 ease-out hover:bg-primary/25 dark:hover:bg-dark-primary/25" 
       @click="closeModal">
@@ -8,8 +8,7 @@
       <span class="hidden group-hover:block">{{ $t('global.close') }}</span>
     </button>
 
-
-    <img :src="item.strMealThumb" alt="Meal Image" class="w-full h-40 object-cover mb-4 rounded-lg shadow-md hover:mt-6" />
+    <img :src="item.strMealThumb" alt="Meal Image" class="w-full max-h-40 object-cover mb-4 rounded-lg shadow-md hover:mt-6" />
     <h2 class="text-2xl font-bold mb-4 mt-0">
       {{ item.strMeal }}
     </h2>
@@ -18,7 +17,6 @@
       class="animated-gradient text-white font-bold py-2 mb-4 px-4 mx-4 cursor-pointer max-w-full rounded-lg hover:bg-red/10 transform hover:scale-105">
       {{ formatPrice(item.price) }} {{ $t('global.price_unit') }}
     </div>
-    
 
     <Tab :tabs="tabs">
       <template #Ingredients>
@@ -59,13 +57,12 @@
     </Tab>
 
     <button
-      class="bg-background/10 animated-gradient2  sticky bottom-0  text-white py-2 px-4 rounded-md w-full font-semibold hover:bg-accent-hover dark:hover:bg-dark-accent-hover z-10 "
+      class="bg-background/10 animated-gradient2 sticky bottom-0 text-white py-2 px-4 rounded-md w-full font-semibold hover:bg-accent-hover dark:hover:bg-dark-accent-hover z-10"
       @click="orderItem(item)">
       {{ $t('global.order') }}
     </button>
   </div>
 </template>
-
 
 <script setup>
 import { ref, computed, onMounted, onUnmounted, watch, nextTick } from 'vue';
@@ -168,17 +165,18 @@ $bezier: cubic-bezier(0.68, -0.55, 0.27, 1.55);
 
 .modal-content {
   text-align: justify;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .tiles {
   margin-top: 15px;
   margin-bottom: auto;
-  margin-right: 30px;
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   gap: 10px;
-  align-items:flex-start;
-  // width: 100%;
 }
 
 .tile {
@@ -211,7 +209,7 @@ $bezier: cubic-bezier(0.68, -0.55, 0.27, 1.55);
 
   &:hover {
     -webkit-mask: unset;
-  mask: unset;
+    mask: unset;
 
     transform: scale(1.1) rotate(5deg);
     color: #1de8b2;
@@ -224,7 +222,6 @@ $bezier: cubic-bezier(0.68, -0.55, 0.27, 1.55);
     position: absolute;
     top: 0;
     left: 0;
-    // width: 100%;
     height: 100%;
     transform: rotate(-45deg);
     transition: transform 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0.3s;
@@ -236,7 +233,6 @@ $bezier: cubic-bezier(0.68, -0.55, 0.27, 1.55);
     position: absolute;
     top: 0;
     left: 0;
-    // width: 100%;
     height: 100%;
     transform: rotate(0deg);
     transition: transform 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
@@ -266,7 +262,7 @@ $bezier: cubic-bezier(0.68, -0.55, 0.27, 1.55);
   }
 }
 
-h2,  .text-md,  .tab-content, button {
+h2, .text-md, .tab-content, button {
   animation: jelly 1s ease-in-out backwards;
 }
 
@@ -375,7 +371,6 @@ button {
   }
 }
 
-
 @keyframes slideIn {
   0% {
     opacity: 0;
@@ -387,97 +382,60 @@ button {
   }
 }
 
-h2{
+h2 {
   cursor: pointer;
   transition: transform 0.1s ease-in-out, padding 0.3s ease-in-out;
-
   border-radius: 5px;
-  width:100%;
+  width: 100%;
   height: fit-content;
   padding: 2%;
-
-text-align: center;
-z-index: 10;
-// background-color: #4c4c4cda;
-transition: transform 0.3s $bezier, background-color 0.2s ease-in-out, filter 0.5s ease, height  0.5s ease, margin 0.5s ease;
-background: linear-gradient(270deg, #b0acac4d,  #6f6e7230);
-
-}
-h2:hover{
-  transition: transform 0.3s $bezier, background-color 0.2s ease-in-out, filter 0.5s ease, height  0.5s ease, margin 0.5s ease;
-  background: linear-gradient(180deg, #4c4c4ce7,  #600cc1a1);
-// background-color: rgba(128, 128, 128, 0.49);
+  text-align: center;
+  z-index: 10;
+  background: linear-gradient(270deg, #b0acac4d, #6f6e7230);
+  transition: transform 0.3s $bezier, background-color 0.2s ease-in-out, filter 0.5s ease, height 0.5s ease, margin 0.5s ease;
 }
 
-img{
+h2:hover {
+  background: linear-gradient(180deg, #4c4c4ce7, #600cc1a1);
+}
+
+img {
   background-color: $background-color;
   cursor: pointer;
-  // height: 90%;
   filter: grayscale(100%);
   height: 30%;
-
   border-radius: 5px;
-  margin-top: 0px;
-  transition: transform 0.3s $bezier, background-color 0.3s ease-in-out, filter 0.5s ease, height 0.5s ease, margin 0.5s ease ;
   margin-top: 20px;
-
+  transition: transform 0.3s $bezier, background-color 0.3s ease-in-out, filter 0.5s ease, height 0.5s ease, margin 0.5s ease;
 }
+
 img:hover {
   filter: grayscale(0%);
-
-    transform: scale(1.05) translateY(-5px);
-    background-color: lighten($background-color, 90%);
-    // height: 40%;
-    
-    // margin-bottom: 10px;
-
-    transition: transform 0.3s $bezier, background-color 0.2s ease-in-out, filter 0.5s ease, height  0.5s ease, margin 0.5s ease;
-  }
-
-  img:active {
-  filter: grayscale(0%);
-  // height: 100%;
-
-  // margin-top: 15%;
-  z-index: 10;
-  
-  // margin-bottom: 50%;
-
-
-    transform: scale(1.1) translateY(-5px);
-    background-color: lighten($background-color, 90%);
-    transition: transform 0.3s $bezier, background-color 0.2s ease-in-out, filter 0.5s ease, height 0.5s ease, margin 0.5s ease;
-  }
-
-  .animated-gradient {
-    background: linear-gradient(270deg, #ff000089,  #7700ff15);
-    background-size: 160% 160%;
-    -webkit-animation: backgroundAnimation 10s ease infinite;
-    -moz-animation: backgroundAnimation 10s ease infinite;
-    animation: backgroundAnimation 10s ease infinite;
-    transition: all 1s ease;
+  transform: scale(1.05) translateY(-5px);
+  background-color: lighten($background-color, 90%);
+  transition: transform 0.3s $bezier, background-color 0.2s ease-in-out, filter 0.5s ease, height 0.5s ease, margin 0.5s ease;
 }
-.animated-gradient:hover{
+
+img:active {
+  filter: grayscale(0%);
+  transform: scale(1.1) translateY(-5px);
+  background-color: lighten($background-color, 90%);
+  transition: transform 0.3s $bezier, background-color 0.2s ease-in-out, filter 0.5s ease, height 0.5s ease, margin 0.5s ease;
+}
+
+.animated-gradient {
+  background: linear-gradient(270deg, #ff000089, #7700ff15);
+  background-size: 160% 160%;
+  -webkit-animation: backgroundAnimation 10s ease infinite;
+  -moz-animation: backgroundAnimation 10s ease infinite;
+  animation: backgroundAnimation 10s ease infinite;
+  transition: all 1s ease;
+}
+
+.animated-gradient:hover {
   background-size: 30% 30%;
   transition: all 1s ease;
-
-
 }
-
-// .animated-gradient2 {
-//   background: linear-gradient(270deg, rgba(255, 0, 0, 0.53), rgba(119, 0, 255, 0.08));
-//   background-size: 160% 160%;
-//   animation: backgroundAnimation 10s linear infinite;
-//   transition: background-size 1s ease, backdrop-filter 1s ease;
-// }
-
-// .animated-gradient2:hover {
-//   background-size:70% 10%;
-//   // background-size:     contain;
-//     // background-repeat:   no-repeat;
-//     // background-position: top center;
-
-// }
 
 .animated-gradient2 {
   --c: #1095c1; /* the color */
@@ -489,15 +447,13 @@ img:hover {
   -webkit-background-clip: text,padding-box;
           background-clip: text,padding-box;
   transition: 0.5s;
-  // margin:1%;
   padding: -1%;
-  
   border: 1px solid var(--c);
 }
+
 .animated-gradient2:hover {
   --_p: 100%
 }
-
 
 @-moz-keyframes backgroundAnimation {
     0% { background-position: 0% 50%; }
