@@ -22,8 +22,8 @@
       </div>
     </div>
 
-    <main id="menu-container" class="overflow-auto max-h-[calc(100vh-100px)]" @scroll="handleScroll">
-      <div v-for="(items, category) in groupedMenuItems" :key="category" :ref="setCategoryRef(category)" class="mb-8 mt-6">
+    <main id="menu-container" class="overflow-auto max-h-[calc(100vh-200px)]" @scroll="handleScroll">
+      <div v-for="(items, category) in groupedMenuItems" :key="category" :ref="setCategoryRef(category)" class="mb-8 mt-2">
         <h2 class="text-2xl font-semibold mb-4 mx-2">
           {{ category }}
         </h2>

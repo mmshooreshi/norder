@@ -71,6 +71,8 @@ $transition-time: 0.6s;
 $bezier: cubic-bezier(0.68, -0.55, 0.27, 1.55);
 
 .tabs {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   max-width: 600px;
 }
@@ -79,16 +81,20 @@ $bezier: cubic-bezier(0.68, -0.55, 0.27, 1.55);
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 20px;
+  font-size: smaller;
+  text-wrap: nowrap;
 }
 
 .tab-button {
-  padding: 10px;
+  padding: 3px;
   cursor: pointer;
   border: none;
   background-color: $secondary-color;
   color: white;
   border-radius: 10px;
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  animation: jelly 0.5s ease-in-out both;
+
+  // transition: transform 0.3s ease, background-color 0.3s ease;
   border: 3px solid transparent;
 
   &.active {
@@ -118,6 +124,7 @@ $bezier: cubic-bezier(0.68, -0.55, 0.27, 1.55);
     outline: none;
     transform: scale(1);
     border: 3px solid $primary-color;
+    
   }
 }
 

@@ -1,27 +1,28 @@
 <template>
   <div ref="modalContent"
-    class="modal-content bg-background dark:bg-dark-background p-6 rounded-lg w-full max-w-lg relative mt-2 mb-2 shadow-lg h-[95vh] overflow-auto">
+    class="modal-content bg-background dark:bg-dark-background p-4 pt-6 rounded-lg w-full max-w-lg relative mt-2 mb-2 shadow-lg h-[90vh] overflow-hidden">
     <button 
-      class="close-button absolute top-2 right-2 text-red-500 text-sm rounded-lg p-1 transition-transform duration-300 ease-out hover:bg-primary/25 dark:hover:bg-dark-primary/25" 
+      class="close-button absolute top-2 right-2 text-red-500 text-lg rounded-lg p-1 transition-transform duration-300 ease-out hover:bg-primary/25 dark:hover:bg-dark-primary/25" 
       @click="closeModal">
       ✖
       <span class="hidden group-hover:block">{{ $t('global.close') }}</span>
     </button>
 
-    <h2 class="text-2xl font-bold mb-2 mt-2">
+
+    <img :src="item.strMealThumb" alt="Meal Image" class="w-full h-40 object-cover mb-4 rounded-lg shadow-md hover:mt-6" />
+    <h2 class="text-2xl font-bold mb-4 mt-0">
       {{ item.strMeal }}
     </h2>
-
-    <img :src="item.strMealThumb" alt="Meal Image" class="w-full h-40 object-cover mb-4 rounded-lg shadow-md" />
 
     <div
       class="animated-gradient text-white font-bold py-2 mb-4 px-4 mx-4 cursor-pointer max-w-full rounded-lg hover:bg-red/10 transform hover:scale-105">
       {{ formatPrice(item.price) }} {{ $t('global.price_unit') }}
     </div>
     
+
     <Tab :tabs="tabs">
       <template #Ingredients>
-        <ul class="px-4 my-0 pt-2 pb-6 max-h-60 mx-0 overflow-auto">
+        <ul class="px-4 my-0 pt-2 pb-6 max-h-60 mx-0 overflow-auto overflow-x-hidden">
           <li v-for="(ingredient, index) in ingredients" :key="index" 
               class="flex justify-between items-center p-2 mb-1 ml-1 mr-2 bg-background-color rounded-lg hover:bg-highlight-color transition-transform duration-200 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary-color roww">
             <span>{{ ingredient }}</span>
@@ -58,7 +59,7 @@
     </Tab>
 
     <button
-      class="animated-gradient2 sticky bottom-0 bg-accent dark:bg-dark-accent text-white py-2 px-4 rounded-md w-full font-semibold hover:bg-accent-hover dark:hover:bg-dark-accent-hover"
+      class="bg-background/10 animated-gradient2  sticky bottom-0  text-white py-2 px-4 rounded-md w-full font-semibold hover:bg-accent-hover dark:hover:bg-dark-accent-hover z-10 "
       @click="orderItem(item)">
       {{ $t('global.order') }}
     </button>
@@ -265,8 +266,8 @@ $bezier: cubic-bezier(0.68, -0.55, 0.27, 1.55);
   }
 }
 
-h2, img, .text-md,  .tab-content, button {
-  animation: jelly 0.3s ease-in-out backwards;
+h2,  .text-md,  .tab-content, button {
+  animation: jelly 1s ease-in-out backwards;
 }
 
 h2 {
@@ -274,6 +275,7 @@ h2 {
 }
 
 img {
+  animation: jelly 0.5s ease-in-out backwards;
   animation-delay: 0.1s;
 }
 
@@ -320,7 +322,7 @@ button {
 
 @keyframes jelly {
   0% {
-    transform: scale(0);
+    transform: scale(0.7);
   }
   50% {
     transform: scale(1.03);
@@ -388,16 +390,23 @@ button {
 h2{
   cursor: pointer;
   transition: transform 0.1s ease-in-out, padding 0.3s ease-in-out;
-  padding: 0%;
-max-width: fit-content;
-  
+
+  border-radius: 5px;
+  width:100%;
+  height: fit-content;
+  padding: 2%;
+
+text-align: center;
+z-index: 10;
+// background-color: #4c4c4cda;
+transition: transform 0.3s $bezier, background-color 0.2s ease-in-out, filter 0.5s ease, height  0.5s ease, margin 0.5s ease;
+background: linear-gradient(270deg, #b0acac4d,  #6f6e7230);
+
 }
 h2:hover{
-  transform: scale(1.3) translateY(12%) translateX(-13%);
-  padding-top: -5%;
-  
-  transition: transform 0.2s ease-in-out, padding 0.3s ease-in-out;
-
+  transition: transform 0.3s $bezier, background-color 0.2s ease-in-out, filter 0.5s ease, height  0.5s ease, margin 0.5s ease;
+  background: linear-gradient(180deg, #4c4c4ce7,  #600cc1a1);
+// background-color: rgba(128, 128, 128, 0.49);
 }
 
 img{
@@ -427,13 +436,15 @@ img:hover {
 
   img:active {
   filter: grayscale(0%);
-  height: 100%;
-  margin-top: 15%;
-  z-index: 0;
-  margin-bottom: 50%;
+  // height: 100%;
+
+  // margin-top: 15%;
+  z-index: 10;
+  
+  // margin-bottom: 50%;
 
 
-    transform: scale(1.05) translateY(-5px);
+    transform: scale(1.1) translateY(-5px);
     background-color: lighten($background-color, 90%);
     transition: transform 0.3s $bezier, background-color 0.2s ease-in-out, filter 0.5s ease, height 0.5s ease, margin 0.5s ease;
   }
