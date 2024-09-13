@@ -1,4 +1,5 @@
 <template>
+  <!-- <Diana></Diana> -->
   <div :class="directionClass" class="scroll-smooth max-w-screen m-8 p-4 max-h-screen" @scroll="handleScroll">
     <header class="mb-6 pt-4">
       <h1 class="text-3xl font-bold text-center">

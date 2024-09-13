@@ -1,6 +1,6 @@
 <template>
-  <div ref="modalContent"
-    class="modal-content bg-background dark:bg-dark-background p-4 pt-6 rounded-lg w-full max-w-lg relative mt-2 mb-2 shadow-lg overflow-hidden">
+  <div ref="modalContent overflow-visible"
+    class="modal-content bg-background dark:bg-dark-background p-4 pt-6 rounded-lg w-full max-w-lg relative mt-2 mb-2 shadow-lg overflow-visible">
     <button 
       class="close-button absolute top-2 right-2 text-red-500 text-lg rounded-lg p-1 transition-transform duration-300 ease-out hover:bg-primary/25 dark:hover:bg-dark-primary/25" 
       @click="closeModal">
@@ -8,7 +8,7 @@
       <span class="hidden group-hover:block">{{ $t('global.close') }}</span>
     </button>
 
-    <img :src="item.strMealThumb" alt="Meal Image" class="w-full max-h-40 object-cover mb-4 rounded-lg shadow-md hover:mt-6" />
+    <img :src="item.strMealThumb" alt="Meal Image" class=" object-cover max-h-40 hover:mt-4" />
     <h2 class="text-2xl font-bold mb-4 mt-0">
       {{ item.strMeal }}
     </h2>
@@ -81,6 +81,7 @@ const { locale, t } = useI18n();
 const directionClass = computed(() => (locale.value === 'fa' ? 'rtl' : 'ltr'));
 
 const modalContent = ref(null);
+const isFullscreen = ref(false); // Add this line for fullscreen state
 
 const tabFields = ['Ingredients', 'Instructions', 'Tags', 'Source'];
 const tabs = computed(() => tabFields.map(field => ({
@@ -138,6 +139,10 @@ function handleKeydown(event) {
   }
 }
 
+function toggleFullscreen() {
+  isFullscreen.value = !isFullscreen.value;
+}
+
 onMounted(async () => {
   window.addEventListener('keydown', handleKeydown);
   await nextTick();
@@ -154,6 +159,7 @@ onClickOutside(modalContent, () => {
   closeModal();
 });
 </script>
+
 
 <style lang="scss" scoped>
 $primary-color: #1e8fff;
@@ -353,13 +359,13 @@ button {
   }
 
   &:active {
-    transform: scale(0.97);
+    // transform: scale(0.97);
     background-color: darken($background-color, 10%);
     transition: transform 0.1s $bezier, background-color 0.1s ease-in-out;
   }
 
   &:focus {
-    outline: none;
+    // outline: none;
     box-shadow: 0 0 0 3px rgba($primary-color, 0.5);
     transition: box-shadow 0.3s ease-in-out;
   }
@@ -401,24 +407,38 @@ h2:hover {
 
 img {
   background-color: $background-color;
+  margin: 1rem;
   cursor: pointer;
   filter: grayscale(100%);
-  height: 30%;
+  max-height: 15vh !important;
+
+  // height: 30%;
   border-radius: 5px;
-  margin-top: 20px;
-  transition: transform 0.3s $bezier, background-color 0.3s ease-in-out, filter 0.5s ease, height 0.5s ease, margin 0.5s ease;
+  // margin-top: 20px;
+  transition: transform 0.3s $bezier, background-color 0.3s ease-in-out, filter 0.5s ease, max-height 0.5s ease, margin 0.5s ease;
 }
 
 img:hover {
   filter: grayscale(0%);
+  max-height: 50vh !important;
   transform: scale(1.05) translateY(-5px);
   background-color: lighten($background-color, 90%);
-  transition: transform 0.3s $bezier, background-color 0.2s ease-in-out, filter 0.5s ease, height 0.5s ease, margin 0.5s ease;
+  transition: transform 0.3s $bezier, background-color 0.2s ease-in-out, filter 0.5s ease,  max-height 0.5s ease-in-out , margin 0.5s ease;
 }
 
 img:active {
-  filter: grayscale(0%);
-  transform: scale(1.1) translateY(-5px);
+  // width: 500%;
+  // height: 500%;
+  max-height: 120vh !important;
+  // height: 50vh;
+  max-width: 100vw;
+  left: -15vw;
+  // top: 0px;
+
+z-index: 100;
+position: absolute;
+  filter: grayscale(50%);
+  // transform: scale(1.3) translateX(0%);
   background-color: lighten($background-color, 90%);
   transition: transform 0.3s $bezier, background-color 0.2s ease-in-out, filter 0.5s ease, height 0.5s ease, margin 0.5s ease;
 }
@@ -467,6 +487,25 @@ img:active {
     100% { background-position: 0% 50%; }
 }
 
-</style>
+.fullscreen-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
 
+.fullscreen-image {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  transition: transform 0.3s $bezier, filter 0.3s ease-in-out;
+}
+
+</style>
 
