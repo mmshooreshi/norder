@@ -8,7 +8,7 @@
       <span class="hidden group-hover:block">{{ $t('global.close') }}</span>
     </button>
 
-    <img :src="item.strMealThumb" alt="Meal Image" class=" object-cover max-h-40 hover:mt-4" />
+    <img :src="item.strMealThumb" alt="Meal Image" class=" object-cover max-h-40 " />
     <h2 class="text-2xl font-bold mb-4 mt-0">
       {{ item.strMeal }}
     </h2>
@@ -420,7 +420,8 @@ img {
 
 img:hover {
   filter: grayscale(0%);
-  max-height: 50vh !important;
+  margin: 2rem;
+  max-height: 40vh !important;
   transform: scale(1.05) translateY(-5px);
   background-color: lighten($background-color, 90%);
   transition: transform 0.3s $bezier, background-color 0.2s ease-in-out, filter 0.5s ease,  max-height 0.5s ease-in-out , margin 0.5s ease;
