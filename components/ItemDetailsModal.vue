@@ -1,6 +1,6 @@
 <template>
     <div ref="modalContent"
-      class="bg-background dark:bg-dark-background p-6 rounded-lg w-full max-w-lg relative mt-12 shadow-lg max-h-80vh overflow-auto modal-content">
+      class="bg-background dark:bg-dark-background p-6 rounded-lg w-full max-w-lg relative mt-6 mb-6 shadow-lg max-h-90vh overflow-auto modal-content">
       <!-- Close button that emits the 'close' event -->
       <button 
   class="close-button absolute top-2 right-2 text-red-500 text-sm rounded-lg p-1 transition-transform duration-300 ease-out hover:bg-primary/25 dark:hover:bg-dark-primary/25" 
@@ -25,7 +25,7 @@
       <h3 class="text-xl font-semibold mb-2">
         {{ $t('global.ingredients') }}
       </h3>
-      <ul class="mb-0 max-h-32 overflow-auto">
+      <ul class="mb-0 max-h-36 overflow-auto">
         <li v-for="(ingredient, index) in ingredients" :key="index" class="flex justify-between">
           <span>{{ ingredient }}</span>
           <span>{{ measures[index] }}</span>
@@ -37,7 +37,7 @@
       <h3 class="text-xl font-semibold mb-2">
         {{ $t('global.instructions') }}
       </h3>
-      <p class="mb-0 text-sm max-h-32 overflow-auto rounded-lg">
+      <p class="mb-0 text-sm max-h-36 overflow-auto rounded-lg">
         {{ item.strInstructions }}
       </p>
 
@@ -61,7 +61,7 @@
 
       <!-- Order button that also emits the 'close' event after ordering -->
       <button
-        class="bg-accent dark:bg-dark-accent text-white py-2 px-4 rounded-md w-full font-semibold hover:bg-accent-hover dark:hover:bg-dark-accent-hover"
+        class="sticky bg-accent dark:bg-dark-accent text-white py-2  px-4 rounded-md w-min font-semibold hover:bg-accent-hover dark:hover:bg-dark-accent-hover"
         @click="orderItem(item)">
         {{ $t('global.order') }}
       </button>

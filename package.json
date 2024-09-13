@@ -34,5 +34,14 @@
     "taze": "^0.16.7",
     "typescript": "^5.5.4",
     "vue-tsc": "^2.1.6"
+  },
+  "dependencies": {
+    "@egjs/flicking": "^4.11.4",
+    "@egjs/flicking-plugins": "^4.7.1",
+    "@egjs/vue3-flicking": "^4.11.4",
+    "nuxt-swiper": "^1.2.2",
+    "swiper": "^11.1.14",
+    "vue3-spring": "^0.0.2",
+    "vue3-touch-events": "^4.2.0"
   }
 }

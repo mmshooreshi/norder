@@ -56,7 +56,14 @@ export default defineNuxtConfig({
   ],
 
   // plugin configurations
-  modules: ['@nuxtjs/i18n', '@vueuse/nuxt', '@unocss/nuxt', '@nuxtjs/critters', '@nuxtjs/color-mode', '@pinia/nuxt', '@nuxt/fonts'],
+  modules: ['@nuxtjs/i18n', '@vueuse/nuxt', '@unocss/nuxt', '@nuxtjs/critters', '@nuxtjs/color-mode', '@pinia/nuxt', '@nuxt/fonts', 'nuxt-swiper'],
+  swiper: {
+    // Swiper options
+    //----------------------
+    // prefix: 'Swiper',
+    // styleLang: 'css',
+    // modules: ['navigation', 'pagination'], // all modules are imported by default
+  },
 
   i18n: {
     langDir: 'locales',

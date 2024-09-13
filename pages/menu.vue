@@ -1,49 +1,42 @@
 <template>
-  <div :class="directionClass" class=" max-w-screen m-8 p-4 max-h-screen" @scroll="handleScroll">
-    <!-- Fixed horizontal pane showing current category -->
-    
+  <div :class="directionClass" class="scroll-smooth max-w-screen m-8 p-4 max-h-screen" @scroll="handleScroll">
     <header class="mb-6 pt-4">
-      <!-- Adjust padding to make room for the fixed pane -->
       <h1 class="text-3xl font-bold text-center">
         {{ $t('global.menu') }}
       </h1>
     </header>
 
-    <div class=" sticky top-0 z-50 mt-4 p-2 bg-accent/25 dark:bg-dark-accent/25  rounded-lg mb-0 ">
-  <div class="flex gap-2 overflow-x-auto items-center">
-    <!-- Display the current category and clickable headers -->
-    <!-- <span class="font-semibold mx-2 text-white">{{ currentCategory }}</span> -->
-    <button
-      v-for="(items, category) in groupedMenuItems"
-      :key="category"
-      class="rounded-md bg-primary/50  text-text dark:text-dark-text px-4 py-1 transition-colors duration-200 cursor-pointer "
-      :class="category === currentCategory ? 'bg-accent/50' : 'bg-transparent text-primary dark:text-dark-primary'"
-      @click="scrollToCategory(category)"
-    >
-      {{ category }}
-    </button>
-  </div>
-</div>
+    <div ref="categoryPane" class="sticky top-0 z-1 mt-4 p-2 px-0 bg-accent/25 dark:bg-dark-accent/25 rounded-lg mb-0">
+      <div class="flex gap-2 overflow-x-auto items-center px-2">
+        <button
+          v-for="(items, category) in groupedMenuItems"
+          :key="category"
+          :data-category="category"
+          class="rounded-md bg-primary/50 text-text dark:text-dark-text px-4 py-1 transition-colors duration-200 cursor-pointer"
+          :class="category === currentCategory ? 'bg-accent/50' : 'bg-transparent text-primary dark:text-dark-primary'"
+          @click="scrollToCategory(category)"
+        >
+        
+          {{ category }}
+        </button>
+      </div>
+    </div>
 
-      <main id="menu-container" class="overflow-auto max-h-[calc(100vh-100px)]" @scroll="handleScroll">
-
-      <div v-for="(items, category) in groupedMenuItems" :key="category" :ref="setCategoryRef(category)" class="mb-8">
-        <h2 class="text-2xl font-semibold mb-4">
+    <main id="menu-container" class="overflow-auto max-h-[calc(100vh-100px)]" @scroll="handleScroll">
+      <div v-for="(items, category) in groupedMenuItems" :key="category" :ref="setCategoryRef(category)" class="mb-8 mt-6">
+        <h2 class="text-2xl font-semibold mb-4 mx-2">
           {{ category }}
         </h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          <!-- Listen to the 'select' event from each MenuItem component -->
           <MenuItem v-for="item in items" :key="item.idMeal" :item="item" @select="openItemDetails" />
         </div>
       </div>
     </main>
 
-    <!-- Conditionally render the overlay and modal -->
-    <div v-if="selectedItem" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4">
-      <!-- The transition only affects the modal content -->
+    <div v-if="selectedItem" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-2">
       <transition name="modal" appear>
-        <ItemDetailsModal 
-          v-show="selectedItem"  
+        <Modal
+          v-show="selectedItem"
           :item="selectedItem"
           @close="closeItemDetails"
           @order="orderItem"
@@ -54,10 +47,10 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted, nextTick } from 'vue';
+import { ref, computed, onMounted, nextTick, watch } from 'vue';
 import { fetchMenuItems } from '@/utils/menuService';
 import MenuItem from '@/components/MenuItem.vue';
-import ItemDetailsModal from '@/components/ItemDetailsModal.vue';
+import Modal from '@/components/modal.vue';
 import { useI18n } from 'vue-i18n';
 
 const { locale } = useI18n();
@@ -66,6 +59,7 @@ const menuItems = ref([]);
 const selectedItem = ref(null);
 const currentCategory = ref('');
 const categoryRefs = ref({});
+const categoryPane = ref(null); // Ref for the category pane
 
 onMounted(async () => {
   menuItems.value = await fetchMenuItems();
@@ -92,7 +86,7 @@ function closeItemDetails() {
 }
 
 function orderItem(item) {
-  alert(`${$t('order.confirm')} ${item.strMeal}! ${$t('global.price')}: $${item.price}`);
+  alert(`${$t('order.confirm')} ${item.strMeal}! ${$t('global.price')}: ${item.price}`);
   selectedItem.value = null; // Clear the selected item after ordering
 }
 
@@ -108,12 +102,6 @@ function setCategoryRef(category) {
 }
 
 // Scroll to a specific category when a button is clicked
-// function scrollToCategory(category) {
-//   const element = categoryRefs.value[category];
-//   if (element) {
-//     element.scrollIntoView({ behavior: 'smooth' });
-//   }
-// }
 function scrollToCategory(category) {
   const element = categoryRefs.value[category];
   const menuContainer = document.getElementById('menu-container'); // Use the correct scrolling element
@@ -126,14 +114,11 @@ function scrollToCategory(category) {
 
     // Scroll the menu container to the target element considering the header height
     menuContainer.scrollTo({
-      top: offsetTop - headerHeight +30, // Adjust 20 pixels more for some spacing
+      top: offsetTop - headerHeight + 40, // Adjust 20 pixels more for some spacing
       behavior: 'smooth',
     });
   }
 }
-
-
-
 
 // Update current category based on scroll position
 function handleScroll() {
@@ -175,9 +160,33 @@ function updateCurrentCategory() {
     console.warn('No matching category found for the current scroll position.');
   }
 }
+watch(currentCategory, (newCategory) => {
+  const categoryPaneElement = document.querySelector('.flex.gap-2.overflow-x-auto.items-center');
+  if (categoryPaneElement) {
+    const activeButton = categoryPaneElement.querySelector(`button[data-category="${newCategory}"]`);
+    if (activeButton) {
+      const { offsetLeft, offsetWidth } = activeButton;
+      const { clientWidth } = categoryPaneElement;
+
+      const targetScrollLeft = offsetLeft - clientWidth / 2 + offsetWidth / 2;
+
+      categoryPaneElement.scrollTo({
+        left: targetScrollLeft,
+        behavior: 'smooth'
+      });
+    }
+  }
+});
+
+
+
 </script>
 
+
+
+
 <style scoped>
+
 /* Updated animation classes for smoother and springy effect */
 .modal-enter-active,
 .modal-leave-active {
@@ -209,4 +218,17 @@ function updateCurrentCategory() {
   gap: 8px;
   overflow-x: auto;
 }
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.flex.gap-2.overflow-x-auto.items-center::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.flex.gap-2.overflow-x-auto.items-center {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
 </style>

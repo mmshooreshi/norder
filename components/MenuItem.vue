@@ -1,7 +1,7 @@
 <template>
   <div 
     @click="selectItem" 
-    class="bg-background dark:bg-dark-background shadow-md rounded-lg overflow-hidden transform transition hover:scale-105 cursor-pointer"
+    class="bg-background dark:bg-dark-background shadow-md rounded-lg overflow-hidden transform transition hover:scale-100 cursor-pointer scale-95 -my-2"
   >
     <img 
       :src="item.strMealThumb" 
@@ -11,7 +11,7 @@
     <div class="p-4 pr-3">
       <h3 class="text-lg font-semibold mb-2 flex justify-between">
         {{ item.strMeal }}
-        <span class="text-sm font-normal text-primary dark:text-dark-primary whitespace-nowrap">
+        <span class="text-sm font-normal text-primary dark:text-dark-accent whitespace-nowrap">
           <!-- {{ $t('global.price') }}: -->
           {{ formatPrice(getPrice(item)) }} {{ $t('global.price_unit') }}
         </span>

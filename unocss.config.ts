@@ -42,7 +42,7 @@ export default defineConfig({
       muted: '#F0F0F0', // Muted light gray for disabled elements or secondary backgrounds
 
       // Primary and secondary colors for dark mode
-      'dark-primary': '#FF6B6B', // Same coral for primary elements in dark mode
+      'dark-primary': '#8B0000', // Same coral for primary elements in dark mode
       'dark-secondary': '#4ECDC4', // Same mint green for secondary elements in dark mode
       'dark-accent': '#FFB400', // Bright yellow for accents in dark mode
       'dark-background': '#1B1B1B', // Dark background for dark mode

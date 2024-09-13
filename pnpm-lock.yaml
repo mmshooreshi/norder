@@ -7,6 +7,28 @@ settings:
 importers:
 
   .:
+    dependencies:
+      '@egjs/flicking':
+        specifier: ^4.11.4
+        version: 4.11.4
+      '@egjs/flicking-plugins':
+        specifier: ^4.7.1
+        version: 4.7.1(@egjs/flicking@4.11.4)
+      '@egjs/vue3-flicking':
+        specifier: ^4.11.4
+        version: 4.11.4(vue@3.5.3(typescript@5.5.4))
+      nuxt-swiper:
+        specifier: ^1.2.2
+        version: 1.2.2(magicast@0.3.5)(rollup@4.21.2)(webpack-sources@3.2.3)
+      swiper:
+        specifier: ^11.1.14
+        version: 11.1.14
+      vue3-spring:
+        specifier: ^0.0.2
+        version: 0.0.2(vue@3.5.3(typescript@5.5.4))
+      vue3-touch-events:
+        specifier: ^4.2.0
+        version: 4.2.0
     devDependencies:
       '@antfu/eslint-config':
         specifier: ^3.4.1
@@ -438,6 +460,12 @@ packages:
   '@capsizecss/unpack@2.3.0':
     resolution: {integrity: sha512-qkf9IoFIVTOkkpr8oZtCNSmubyWFCuPU4EOWO6J/rFPP5Ks2b1k1EHDSQRLwfokh6nCd7mJgBT2lhcuDCE6w4w==}
 
+  '@cfcs/core@0.0.24':
+    resolution: {integrity: sha512-feB38qu+eDk0Pggh/yR7gjaNmvUYA2uCxHP3Pz2MLE4LZ/9jPdtu8bzCSI47yTEhWyZCF5Pk698hdz8IN2mTjA==}
+
+  '@cfcs/core@0.1.0':
+    resolution: {integrity: sha512-kvYX0RpL45XTHJ5sW7teNbKeAa7pK3nNqaJPoFfZDPTIBJOkTtRD3QhkBG+O3Hu69a8xeMoPvF6y/RtJ6JUOdA==}
+
   '@clack/core@0.3.4':
     resolution: {integrity: sha512-H4hxZDXgHtWTwV3RAVenqcC4VbJZNegbBjlPvzOzCouXtS2y3sDvlO3IsbrPNWuLWPPlYVYPghQdSF64683Ldw==}
 
@@ -449,6 +477,34 @@ packages:
   '@cloudflare/kv-asset-handler@0.3.4':
     resolution: {integrity: sha512-YLPHc8yASwjNkmcDMQMY35yiWjoKAKnhUbPRszBRS0YgH+IXtsMp61j+yTcnCE3oO2DgP0U3iejLC8FTtKDC8Q==}
     engines: {node: '>=16.13'}
+
+  '@egjs/agent@2.4.4':
+    resolution: {integrity: sha512-cvAPSlUILhBBOakn2krdPnOGv5hAZq92f1YHxYcfu0p7uarix2C6Ia3AVizpS1SGRZGiEkIS5E+IVTLg1I2Iog==}
+
+  '@egjs/axes@3.9.1':
+    resolution: {integrity: sha512-vaqUe/boRDk/A4TjiPtMv+lf7c4Q2jTER/Hw4I61NiJUyPftlZjaP4cteBCQejFyZmzimmA2W0cLmYZHTjBY8A==}
+
+  '@egjs/component@3.0.5':
+    resolution: {integrity: sha512-cLcGizTrrUNA2EYE3MBmEDt2tQv1joVP1Q3oDisZ5nw0MZDx2kcgEXM+/kZpfa/PAkFvYVhRUZwytIQWoN3V/w==}
+
+  '@egjs/flicking-plugins@4.7.1':
+    resolution: {integrity: sha512-J0k499sCs5IAMXAJuBcrY1OoiHRi4BPbS1/RCCkIzsYgdoHzcAUjKyhSsms3gLz4O/K5eTbBmWBUtFO86fETHg==}
+    peerDependencies:
+      '@egjs/flicking': ^4.1.0
+
+  '@egjs/flicking@4.11.4':
+    resolution: {integrity: sha512-ZQxJS0C9lZ/PcMfM7vo9KQW4tvmi+e+9HIxRstRCo2DGy0nJ6LklZt0b+POf6O9Ak0qZwDeHCGp6AhrDu9EPNA==}
+
+  '@egjs/imready@1.4.1':
+    resolution: {integrity: sha512-JIOBs4lB7FYdsKi5uvz2j3SObX8eShtZjtqlOH41tm185aJOQZwiKBK8+V4MxzG4X6DqVhpdN8UcuVwBbElfsg==}
+
+  '@egjs/list-differ@1.0.1':
+    resolution: {integrity: sha512-OTFTDQcWS+1ZREOdCWuk5hCBgYO4OsD30lXcOCyVOAjXMhgL5rBRDnt/otb6Nz8CzU0L/igdcaQBDLWc4t9gvg==}
+
+  '@egjs/vue3-flicking@4.11.4':
+    resolution: {integrity: sha512-3CkbaiXHBKnsx0UKY6xKdF5lPbQrJ4LnJSDpoqbIarIMg0mIstC3QlaFGUDIYGCNnhGM1mIYKW4d1KaQdcL6mA==}
+    peerDependencies:
+      vue: ^3.0.0
 
   '@es-joy/jsdoccomment@0.48.0':
     resolution: {integrity: sha512-G6QUWIcC+KvSwXNsJyDTHvqUdNoAVJPPgkc3+Uk4WBKqZvoXhlvazOgm9aL0HwihJLQf0l+tOE2UFzXBqCqgDw==}
@@ -3723,6 +3779,9 @@ packages:
     engines: {node: ^16.10.0 || >=18.0.0}
     hasBin: true
 
+  nuxt-swiper@1.2.2:
+    resolution: {integrity: sha512-y4s/srISP4OuhXbYg9/W1/6EWnbcoHRGEKBKAvGP0I2h0b3enhqZNEk7854M3F89ys8waacBXektPzamgl5xwQ==}
+
   nuxt@3.13.1:
     resolution: {integrity: sha512-En0vVrCJWu54ptShUlrqOGzXTcjhX+RnHShwdcpNqL9kmE9FWqeDYnPTgt2gJWrYSvVbmjJcVfEugNo9XpNmHA==}
     engines: {node: ^14.18.0 || >=16.10.0}
@@ -4534,6 +4593,14 @@ packages:
     engines: {node: '>=14.0.0'}
     hasBin: true
 
+  swiper@10.3.1:
+    resolution: {integrity: sha512-24Wk3YUdZHxjc9faID97GTu6xnLNia+adMt6qMTZG/HgdSUt4fS0REsGUXJOgpTED0Amh/j+gRGQxsLayJUlBQ==}
+    engines: {node: '>= 4.7.0'}
+
+  swiper@11.1.14:
+    resolution: {integrity: sha512-VbQLQXC04io6AoAjIUWuZwW4MSYozkcP9KjLdrsG/00Q/yiwvhz9RQyt0nHXV10hi9NVnDNy1/wv7Dzq1lkOCQ==}
+    engines: {node: '>= 4.7.0'}
+
   synckit@0.6.2:
     resolution: {integrity: sha512-Vhf+bUa//YSTYKseDiiEuQmhGCoIF3CVBhunm3r/DQnYiGT4JssmnKQc44BIyOZRK2pKjXXAgbhfmbeoC9CJpA==}
     engines: {node: '>=12.20'}
@@ -5031,6 +5098,14 @@ packages:
     hasBin: true
     peerDependencies:
       typescript: '>=5.0.0'
+
+  vue3-spring@0.0.2:
+    resolution: {integrity: sha512-fBH6fxzJiB/ZtcuTqlzUWCgoo9Hx1dclFPzYCjz/DNOFqTzKKmcuIRObl/Y262h8TIski1z1+FiKnviCGN2U5Q==}
+    peerDependencies:
+      vue: ^3.0.0-beta.13
+
+  vue3-touch-events@4.2.0:
+    resolution: {integrity: sha512-DgZJo8/QE72ilEDJ5+01SJ2JH7Aj55k0PidGLDU1jHewIG3GOW25azFuDsJ6nIXrfN8kMXBRR8PDx0GuNbIXhw==}
 
   vue@3.5.3:
     resolution: {integrity: sha512-xvRbd0HpuLovYbOHXRHlSBsSvmUJbo0pzbkKTApWnQGf3/cu5Z39mQeA5cZdLRVIoNf3zI6MSoOgHUT5i2jO+Q==}
@@ -5644,6 +5719,14 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
+  '@cfcs/core@0.0.24':
+    dependencies:
+      '@egjs/component': 3.0.5
+
+  '@cfcs/core@0.1.0':
+    dependencies:
+      '@egjs/component': 3.0.5
+
   '@clack/core@0.3.4':
     dependencies:
       picocolors: 1.1.0
@@ -5658,6 +5741,40 @@ snapshots:
   '@cloudflare/kv-asset-handler@0.3.4':
     dependencies:
       mime: 3.0.0
+
+  '@egjs/agent@2.4.4': {}
+
+  '@egjs/axes@3.9.1':
+    dependencies:
+      '@cfcs/core': 0.1.0
+      '@egjs/agent': 2.4.4
+      '@egjs/component': 3.0.5
+
+  '@egjs/component@3.0.5': {}
+
+  '@egjs/flicking-plugins@4.7.1(@egjs/flicking@4.11.4)':
+    dependencies:
+      '@egjs/flicking': 4.11.4
+
+  '@egjs/flicking@4.11.4':
+    dependencies:
+      '@egjs/axes': 3.9.1
+      '@egjs/component': 3.0.5
+      '@egjs/imready': 1.4.1
+      '@egjs/list-differ': 1.0.1
+
+  '@egjs/imready@1.4.1':
+    dependencies:
+      '@cfcs/core': 0.0.24
+      '@egjs/component': 3.0.5
+
+  '@egjs/list-differ@1.0.1': {}
+
+  '@egjs/vue3-flicking@4.11.4(vue@3.5.3(typescript@5.5.4))':
+    dependencies:
+      '@egjs/component': 3.0.5
+      '@egjs/flicking': 4.11.4
+      vue: 3.5.3(typescript@5.5.4)
 
   '@es-joy/jsdoccomment@0.48.0':
     dependencies:
@@ -9556,6 +9673,16 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
 
+  nuxt-swiper@1.2.2(magicast@0.3.5)(rollup@4.21.2)(webpack-sources@3.2.3):
+    dependencies:
+      '@nuxt/kit': 3.13.1(magicast@0.3.5)(rollup@4.21.2)(webpack-sources@3.2.3)
+      swiper: 10.3.1
+    transitivePeerDependencies:
+      - magicast
+      - rollup
+      - supports-color
+      - webpack-sources
+
   nuxt@3.13.1(@parcel/watcher@2.4.1)(@types/node@22.5.4)(encoding@0.1.13)(eslint@9.10.0(jiti@1.21.6))(ioredis@5.4.1)(magicast@0.3.5)(optionator@0.9.3)(rollup@4.21.2)(sass@1.78.0)(terser@5.32.0)(typescript@5.5.4)(vite@5.4.3(@types/node@22.5.4)(sass@1.78.0)(terser@5.32.0))(vue-tsc@2.1.6(typescript@5.5.4))(webpack-sources@3.2.3):
     dependencies:
       '@nuxt/devalue': 2.0.2
@@ -10489,6 +10616,10 @@ snapshots:
       csso: 5.0.5
       picocolors: 1.0.0
 
+  swiper@10.3.1: {}
+
+  swiper@11.1.14: {}
+
   synckit@0.6.2:
     dependencies:
       tslib: 2.7.0
@@ -11041,6 +11172,12 @@ snapshots:
       '@vue/language-core': 2.1.6(typescript@5.5.4)
       semver: 7.6.3
       typescript: 5.5.4
+
+  vue3-spring@0.0.2(vue@3.5.3(typescript@5.5.4)):
+    dependencies:
+      vue: 3.5.3(typescript@5.5.4)
+
+  vue3-touch-events@4.2.0: {}
 
   vue@3.5.3(typescript@5.5.4):
     dependencies:
