@@ -17,49 +17,60 @@
       @enter="enter"
       @leave="leave"
     >
-      <div class="tab-content min-h-60 max-h-60" :key="activeTab">
+      <div class="tab-content min-h-60" :key="activeTab">
         <slot :name="tabs[activeTab].name"></slot>
       </div>
     </transition>
   </div>
 </template>
 
-<script setup>
+<script>
 import { ref, nextTick } from 'vue';
 
-const props = defineProps({
-  tabs: Array,
-});
+export default {
+  props: {
+    tabs: Array
+  },
+  setup(props) {
+    const activeTab = ref(0);
 
-const activeTab = ref(0);
+    function setActiveTab(index) {
+      activeTab.value = index;
+      console.log('Active tab set to:', index); // Debugging statement
+    }
 
-function setActiveTab(index) {
-  activeTab.value = index;
-  console.log('Active tab set to:', index); // Debugging statement
-}
+    function beforeEnter(el) {
+      el.style.transform = 'scale(0)';
+      el.style.height = '0';
+    }
 
-function beforeEnter(el) {
-  el.style.transform = 'scale(0)';
-  el.style.height = '0';
-}
+    function enter(el, done) {
+      nextTick(() => {
+        el.style.transition = 'transform 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55), height 0.6s ease';
+        el.style.transform = 'scale(1)';
+        el.style.height = el.scrollHeight + 'px';
+        done();
+      });
+    }
 
-function enter(el, done) {
-  nextTick(() => {
-    el.style.transition = 'transform 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55), height 0.6s ease';
-    el.style.transform = 'scale(1)';
-    el.style.height = el.scrollHeight + 'px';
-    done();
-  });
-}
+    function leave(el, done) {
+      nextTick(() => {
+        el.style.transition = 'transform 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55), height 0.6s ease';
+        el.style.transform = 'scale(0)';
+        el.style.height = '0';
+        done();
+      });
+    }
 
-function leave(el, done) {
-  nextTick(() => {
-    el.style.transition = 'transform 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55), height 0.6s ease';
-    el.style.transform = 'scale(0)';
-    el.style.height = '0';
-    done();
-  });
-}
+    return {
+      activeTab,
+      setActiveTab,
+      beforeEnter,
+      enter,
+      leave
+    };
+  }
+};
 </script>
 
 <style lang="scss" scoped>
@@ -79,12 +90,11 @@ $bezier: cubic-bezier(0.68, -0.55, 0.27, 1.55);
 
 .tab-buttons {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   margin-bottom: 20px;
   font-size: smaller;
   text-wrap: nowrap;
 }
-
 .tab-button {
   padding: 3px;
   cursor: pointer;
@@ -92,22 +102,21 @@ $bezier: cubic-bezier(0.68, -0.55, 0.27, 1.55);
   background-color: $secondary-color;
   color: white;
   border-radius: 10px;
-  animation: jelly 0.5s ease-in-out both;
-
-  // transition: transform 0.3s ease, background-color 0.3s ease;
   border: 3px solid transparent;
+  transition: transform 0.4s $bezier, background-color 0.4s ease, border 0.4s ease;
 
   &.active {
     background-color: $primary-color;
     color: white;
-    transform: scale(1.1) !important;
+    transform: scale(1.2) !important;
+    border: 3px solid $primary-color;
 
     &::after {
       content: '';
       display: block;
       width: 0;
       height: 2px;
-      transition: width 1s cubic-bezier(0.23, 1, 0.320, 1);
+      transition: width 0.4s ease;
     }
 
     &:hover::after {
@@ -122,27 +131,42 @@ $bezier: cubic-bezier(0.68, -0.55, 0.27, 1.55);
 
   &:focus {
     outline: none;
-    transform: scale(1);
     border: 3px solid $primary-color;
-    
   }
 }
 
 .tab-content {
-  // box-shadow: 0px 0px 20px 5px rgb(204, 1, 1) inset;
   border-radius: 10px;
   position: relative;
   overflow: hidden;
   animation: jelly $transition-time ease-in-out;
-  // padding: 20px; // Add padding to ensure content is not right at the edge
-  --mask: linear-gradient(to bottom, 
+  --mask-top: linear-gradient(to bottom, 
       rgba(0,0,0, 0) 0%,   rgba(0,0,0, 1) 10%, 
       rgba(0,0,0, 1) 90%, rgba(0,0,0, 0) 10%
   ) 100% 50% / 100% 100% repeat-x;
   
-  -webkit-mask: var(--mask); 
-  mask: var(--mask);
+  --mask-bottom: linear-gradient(to top, 
+      rgba(0,0,0, 0) 0%,   rgba(0,0,0, 1) 10%, 
+      rgba(0,0,0, 1) 90%, rgba(0,0,0, 0) 10%
+  ) 100% 50% / 100% 100% repeat-x;
   
+  -webkit-mask: var(--mask-top); 
+  mask: var(--mask-top);
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 20px; /* Adjust height as needed */
+    pointer-events: none;
+  }
+
+  &::before {
+    top: 0;
+    -webkit-mask: var(--mask-top);
+    mask: var(--mask-top);
+  }
 
   &::before {
     content: '';
@@ -160,7 +184,6 @@ $bezier: cubic-bezier(0.68, -0.55, 0.27, 1.55);
 
 .instructions, .ingredients {
   margin: 10px 0;
-  padding: 10px;
   background-color: #f9f9f9;
   border: 1px solid #ddd;
   border-radius: 5px;
@@ -203,7 +226,6 @@ $bezier: cubic-bezier(0.68, -0.55, 0.27, 1.55);
     li:nth-child(5) {
       animation-delay: 0.5s;
     }
-    // Add more nth-child selectors as needed for more list items
   }
 }
 
@@ -263,4 +285,3 @@ $bezier: cubic-bezier(0.68, -0.55, 0.27, 1.55);
   }
 }
 </style>
-

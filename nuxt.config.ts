@@ -56,7 +56,7 @@ export default defineNuxtConfig({
   ],
 
   // plugin configurations
-  modules: ['@nuxtjs/i18n', '@vueuse/nuxt', '@unocss/nuxt', '@nuxtjs/critters', '@nuxtjs/color-mode', '@pinia/nuxt', '@nuxt/fonts', 'nuxt-swiper'],
+  modules: ['@nuxtjs/i18n', '@vueuse/nuxt', '@unocss/nuxt', '@nuxtjs/critters', '@nuxtjs/color-mode', '@pinia/nuxt', '@nuxt/fonts', 'nuxt-swiper', '@vite-pwa/nuxt'],
   swiper: {
     // Swiper options
     //----------------------
@@ -100,4 +100,7 @@ export default defineNuxtConfig({
   devtools: {
     enabled: true,
   },
+  pwa:{
+
+  }
 })

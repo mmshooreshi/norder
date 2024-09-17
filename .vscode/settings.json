@@ -1,4 +1,5 @@
 {
     "CodeGPT.apiKey": "Custom",
-    "CodeGPT.Autocomplete.provider": "Mistral - codestral-latest"
+    "CodeGPT.Autocomplete.provider": "Mistral - codestral-latest",
+    "typescript.tsdk": "node_modules/typescript/lib"
 }

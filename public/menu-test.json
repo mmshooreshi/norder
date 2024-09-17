@@ -1,0 +1,3183 @@
+[
+    {
+        "_id": "65aa6e82ee72c31b47e48624",
+        "name": "قهوه های تک خواستگاه و تخصصی ",
+        "showCategoryName": true,
+        "description": "",
+        "status": true,
+        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+        "subcategories": [
+            {
+                "_id": "65aa6e91ee72c38b70e4862b",
+                "name": "قهوه های تک خواستگاه و تخصصی ",
+                "showSubcategoryName": true,
+                "description": "",
+                "status": true,
+                "order": 14,
+                "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                "parentCategory": "65aa6e82ee72c31b47e48624",
+                "items": [
+                    {
+                        "_id": "667ecd20f9d62a0d04780066",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": -1,
+                        "relatedDynamicDiscountForItems": [],
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e",
+                            "664ba2e60fd988022d442854"
+                        ],
+                        "name": "اسپرسو یمن",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": true,
+                        "description": "مزرعه ی آقای الهمدانی\nفراوری : طبیعی\nطعم یادها : کاکائو .زرد آلو . شراب\n",
+                        "images": [
+                            {
+                                "_id": "669a570d54538a47cc472e74",
+                                "fileName": "espresso-special-1721390859591.jpg",
+                                "urlLocation": "https://item-images.s3.ir-thr-at1.arvanstorage.ir/espresso-special-1721390859591.jpg"
+                            }
+                        ],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "65aa6e82ee72c31b47e48624",
+                        "parentSubcategory": "65aa6e91ee72c38b70e4862b",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "667ecd20f9d62aed6b780067",
+                                "title": "",
+                                "price": 170000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-06-28T14:48:00.936Z",
+                        "createdAt": "2024-06-28T14:48:00.939Z",
+                        "updatedAt": "2024-08-13T07:42:16.536Z",
+                        "__v": 0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "65afbe8478b04203c96d9211",
+        "name": "نوشیدنی گرم بر پایه اسپرسو ",
+        "showCategoryName": true,
+        "description": "",
+        "status": true,
+        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+        "subcategories": [
+            {
+                "_id": "65afc08b78b0422f9e6d989f",
+                "name": "نوشیدنی گرم بر پایه اسپرسو ",
+                "showSubcategoryName": true,
+                "description": "",
+                "status": true,
+                "order": 13,
+                "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                "parentCategory": "65afbe8478b04203c96d9211",
+                "items": [
+                    {
+                        "_id": "65afc20478b0429d6c6d9cac",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": 77,
+                        "relatedDynamicDiscountForItems": [],
+                        "name": "اسپرسو ترکیبی",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": false,
+                        "description": "عصاره گیری از قهوه ی صد در صد عربیکا \nترکیبی از قهوه های آمریکای جنوبی و آفریقا \nدارای تناسب مزه ای و طعم های شکلاتی و آجیلی",
+                        "images": [
+                            {
+                                "_id": "65f2ea377090ca1d2d67232f",
+                                "fileName": "espresso-1710418484149.jpg",
+                                "urlLocation": "https://item-images.s3.ir-thr-at1.arvanstorage.ir/espresso-1710418484149.jpg"
+                            }
+                        ],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "65afbe8478b04203c96d9211",
+                        "parentSubcategory": "65afc08b78b0422f9e6d989f",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "65afc20478b04248ce6d9cad",
+                                "title": "",
+                                "price": 107000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-01-23T13:41:24.119Z",
+                        "createdAt": "2024-01-23T13:41:24.122Z",
+                        "updatedAt": "2024-08-09T20:09:41.722Z",
+                        "__v": 0,
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e"
+                        ]
+                    },
+                    {
+                        "_id": "65afc21878b04243576d9ce1",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": 78,
+                        "relatedDynamicDiscountForItems": [],
+                        "name": "امریکانو ترکیبی",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": false,
+                        "description": "عصاره گیری شده از قهوه 100% عربیکا ",
+                        "images": [
+                            {
+                                "_id": "65f2e8c37090ca75da6720fd",
+                                "fileName": "americanoc-1710418113428.jpg",
+                                "urlLocation": "https://item-images.s3.ir-thr-at1.arvanstorage.ir/americanoc-1710418113428.jpg"
+                            }
+                        ],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "65afbe8478b04203c96d9211",
+                        "parentSubcategory": "65afc08b78b0422f9e6d989f",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "65afc21878b04265aa6d9ce2",
+                                "title": "",
+                                "price": 107000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-01-23T13:41:44.437Z",
+                        "createdAt": "2024-01-23T13:41:44.438Z",
+                        "updatedAt": "2024-08-09T20:10:07.584Z",
+                        "__v": 0,
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e"
+                        ]
+                    },
+                    {
+                        "_id": "65afc22e78b04278926d9cee",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": 79,
+                        "relatedDynamicDiscountForItems": [],
+                        "name": "لاته",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": false,
+                        "description": "عصاره گیری شده از قهوه 100% عربیکا ",
+                        "images": [
+                            {
+                                "_id": "65f2ebb67090ca80fc6725f9",
+                                "fileName": "latte-1710418868980.jpg",
+                                "urlLocation": "https://item-images.s3.ir-thr-at1.arvanstorage.ir/latte-1710418868980.jpg"
+                            }
+                        ],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "65afbe8478b04203c96d9211",
+                        "parentSubcategory": "65afc08b78b0422f9e6d989f",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "65afc22e78b0421e486d9cef",
+                                "title": "",
+                                "price": 130000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-01-23T13:42:06.487Z",
+                        "createdAt": "2024-01-23T13:42:06.489Z",
+                        "updatedAt": "2024-08-09T20:11:00.044Z",
+                        "__v": 0,
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e"
+                        ]
+                    },
+                    {
+                        "_id": "65afc24978b042e3686d9da6",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": 80,
+                        "relatedDynamicDiscountForItems": [],
+                        "name": "کاپوچینو",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": false,
+                        "description": "عصاره گیری شده از قهوه 100% عربیکا ",
+                        "images": [
+                            {
+                                "_id": "65f2ed857090ca2bf867294f",
+                                "fileName": "cappucino-1710419332096.jpg",
+                                "urlLocation": "https://item-images.s3.ir-thr-at1.arvanstorage.ir/cappucino-1710419332096.jpg"
+                            }
+                        ],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "65afbe8478b04203c96d9211",
+                        "parentSubcategory": "65afc08b78b0422f9e6d989f",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "65afc24978b042518b6d9da7",
+                                "title": "",
+                                "price": 125000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-01-23T13:42:33.342Z",
+                        "createdAt": "2024-01-23T13:42:33.344Z",
+                        "updatedAt": "2024-08-09T20:11:21.489Z",
+                        "__v": 0,
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e"
+                        ]
+                    },
+                    {
+                        "_id": "65afc27278b042d57b6d9db3",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": 81,
+                        "relatedDynamicDiscountForItems": [],
+                        "name": "کارامل ماکیاتو",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": false,
+                        "description": "عصاره گیری شده از قهوه 100% عربیکا ",
+                        "images": [
+                            {
+                                "_id": "65f2eda47090ca1a47672980",
+                                "fileName": "moca-1710419363429.jpg",
+                                "urlLocation": "https://item-images.s3.ir-thr-at1.arvanstorage.ir/moca-1710419363429.jpg"
+                            }
+                        ],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "65afbe8478b04203c96d9211",
+                        "parentSubcategory": "65afc08b78b0422f9e6d989f",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "65afc27278b042e9dc6d9db4",
+                                "title": "",
+                                "price": 145000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-01-23T13:43:14.937Z",
+                        "createdAt": "2024-01-23T13:43:14.939Z",
+                        "updatedAt": "2024-08-09T20:12:02.025Z",
+                        "__v": 0,
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e"
+                        ]
+                    },
+                    {
+                        "_id": "65afc28378b042328f6d9e56",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": 82,
+                        "relatedDynamicDiscountForItems": [],
+                        "name": "موکا",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": false,
+                        "description": "عصاره گیری شده از قهوه 100% عربیکا ",
+                        "images": [
+                            {
+                                "_id": "65f2eb287090ca6927672572",
+                                "fileName": "moca-1710418726506.jpg",
+                                "urlLocation": "https://item-images.s3.ir-thr-at1.arvanstorage.ir/moca-1710418726506.jpg"
+                            }
+                        ],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "65afbe8478b04203c96d9211",
+                        "parentSubcategory": "65afc08b78b0422f9e6d989f",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "65afc28478b04209bb6d9e57",
+                                "title": "",
+                                "price": 145000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-01-23T13:43:32.001Z",
+                        "createdAt": "2024-01-23T13:43:32.004Z",
+                        "updatedAt": "2024-08-09T20:12:23.124Z",
+                        "__v": 0,
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "65afbe9278b042057e6d9229",
+        "name": "قهوه های دمی ",
+        "showCategoryName": true,
+        "description": "",
+        "status": true,
+        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+        "subcategories": [
+            {
+                "_id": "65afc09478b04268726d98a3",
+                "name": "قهوه های دمی ",
+                "showSubcategoryName": true,
+                "description": "",
+                "status": true,
+                "order": 12,
+                "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                "parentCategory": "65afbe9278b042057e6d9229",
+                "items": [
+                    {
+                        "_id": "66c1eb6d65829708e46b9d2a",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": 0,
+                        "relatedDynamicDiscountForItems": [],
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e",
+                            "664ba2e60fd988022d442854"
+                        ],
+                        "name": "دمی تک فنجان اتیوپی گوجی",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": true,
+                        "description": "فرآوری: طبیعی/ زیرگونه: گیشا/ طعم یادها: میوهای هسته دار، کارامل",
+                        "images": [],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "65afbe9278b042057e6d9229",
+                        "parentSubcategory": "65afc09478b04268726d98a3",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "66c1eb6d658297e52a6b9d2b",
+                                "title": "",
+                                "price": 150000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-08-18T12:39:09.880Z",
+                        "createdAt": "2024-08-18T12:39:09.885Z",
+                        "updatedAt": "2024-08-18T12:42:34.395Z",
+                        "__v": 0
+                    },
+                    {
+                        "_id": "66c1ec2265829730ff6b9ff2",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": 1,
+                        "relatedDynamicDiscountForItems": [],
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e",
+                            "664ba2e60fd988022d442854"
+                        ],
+                        "name": "دمی دو فنجان اتیوپی گوجی",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": true,
+                        "description": "فرآوری: طبیعی/ زیرگونه: گیشا/ طعم یادها: میوهای هسته دار، کارامل",
+                        "images": [],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "65afbe9278b042057e6d9229",
+                        "parentSubcategory": "65afc09478b04268726d98a3",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "66c1ec2265829723206b9ff3",
+                                "title": "",
+                                "price": 195000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-08-18T12:42:10.691Z",
+                        "createdAt": "2024-08-18T12:42:10.696Z",
+                        "updatedAt": "2024-08-18T12:42:34.403Z",
+                        "__v": 0
+                    },
+                    {
+                        "_id": "667fdc53f9d62a83ce7ade74",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": 2,
+                        "relatedDynamicDiscountForItems": [],
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e",
+                            "664ba2e60fd988022d442854"
+                        ],
+                        "name": "دمی تک فنجان یمن",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": true,
+                        "description": "مزرعه ی آقای الهمدانی\nفراوری : طبیعی\nطعم یادها : کاکائو .زرد آلو . شراب",
+                        "images": [
+                            {
+                                "_id": "669a573054538a7b1a472e91",
+                                "fileName": "tak-fenjan-1721390890649.jpg",
+                                "urlLocation": "https://item-images.s3.ir-thr-at1.arvanstorage.ir/tak-fenjan-1721390890649.jpg"
+                            }
+                        ],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "65afbe9278b042057e6d9229",
+                        "parentSubcategory": "65afc09478b04268726d98a3",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "667fdc53f9d62a5bf67ade75",
+                                "title": "",
+                                "price": 180000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-06-29T10:05:07.316Z",
+                        "createdAt": "2024-06-29T10:05:07.317Z",
+                        "updatedAt": "2024-08-18T12:43:15.203Z",
+                        "__v": 0
+                    },
+                    {
+                        "_id": "667fdc73f9d62a25747adea4",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": 3,
+                        "relatedDynamicDiscountForItems": [],
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e",
+                            "664ba2e60fd988022d442854"
+                        ],
+                        "name": "دمی دو فنجان یمن",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": true,
+                        "description": "مزرعه ی آقای الهمدانی\nفراوری : طبیعی\nطعم یادها : کاکائو .زرد آلو . شراب",
+                        "images": [
+                            {
+                                "_id": "669a573e54538a098b472ea2",
+                                "fileName": "dami-do-fenjan-1721390908599.jpg",
+                                "urlLocation": "https://item-images.s3.ir-thr-at1.arvanstorage.ir/dami-do-fenjan-1721390908599.jpg"
+                            }
+                        ],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "65afbe9278b042057e6d9229",
+                        "parentSubcategory": "65afc09478b04268726d98a3",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "6698cbf254538a4cc9426527",
+                                "title": "",
+                                "price": 240000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-06-29T10:05:39.338Z",
+                        "createdAt": "2024-06-29T10:05:39.339Z",
+                        "updatedAt": "2024-08-18T12:43:15.214Z",
+                        "__v": 0
+                    },
+                    {
+                        "_id": "6692444bc22958740e2fde26",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": 4,
+                        "relatedDynamicDiscountForItems": [],
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e",
+                            "664ba2e60fd988022d442854"
+                        ],
+                        "name": "سرد دم یمن",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": true,
+                        "description": "",
+                        "images": [],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "65afbe9278b042057e6d9229",
+                        "parentSubcategory": "65afc09478b04268726d98a3",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "6692444bc229588ba92fde27",
+                                "title": "",
+                                "price": 160000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-07-13T09:09:31.433Z",
+                        "createdAt": "2024-07-13T09:09:31.435Z",
+                        "updatedAt": "2024-09-13T16:31:47.612Z",
+                        "__v": 0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "65afbea978b0427d006d9253",
+        "name": "نوشیدنی سرد بر پایه اسپرسو ",
+        "showCategoryName": true,
+        "description": "",
+        "status": true,
+        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+        "subcategories": [
+            {
+                "_id": "65afc09b78b042843e6d98a7",
+                "name": "نوشیدنی سرد بر پایه اسپرسو ",
+                "showSubcategoryName": true,
+                "description": "",
+                "status": true,
+                "order": 11,
+                "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                "parentCategory": "65afbea978b0427d006d9253",
+                "items": [
+                    {
+                        "_id": "65afc3ff78b042259d6da239",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": 73,
+                        "relatedDynamicDiscountForItems": [],
+                        "name": "ایس امریکانو",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": false,
+                        "description": "عصاره گیری شده از قهوه 100% عربیکا ",
+                        "images": [
+                            {
+                                "_id": "65f2fce17090cacec3673c78",
+                                "fileName": "iceamericano-1710423263113.jpg",
+                                "urlLocation": "https://item-images.s3.ir-thr-at1.arvanstorage.ir/iceamericano-1710423263113.jpg"
+                            }
+                        ],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "65afbea978b0427d006d9253",
+                        "parentSubcategory": "65afc09b78b042843e6d98a7",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "65afc3ff78b0427eac6da23a",
+                                "title": "",
+                                "price": 107000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-01-23T13:49:51.604Z",
+                        "createdAt": "2024-01-23T13:49:51.606Z",
+                        "updatedAt": "2024-08-09T20:13:16.728Z",
+                        "__v": 0,
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e"
+                        ]
+                    },
+                    {
+                        "_id": "65afc41178b04219d56da24d",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": 74,
+                        "relatedDynamicDiscountForItems": [],
+                        "name": "ایس لاته",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": false,
+                        "description": "عصاره گیری شده از قهوه 100% عربیکا ",
+                        "images": [
+                            {
+                                "_id": "65f2fd057090ca4fac673ddb",
+                                "fileName": "icelatte-1710423300017.jpg",
+                                "urlLocation": "https://item-images.s3.ir-thr-at1.arvanstorage.ir/icelatte-1710423300017.jpg"
+                            }
+                        ],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "65afbea978b0427d006d9253",
+                        "parentSubcategory": "65afc09b78b042843e6d98a7",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "65afc41278b04298fe6da24e",
+                                "title": "",
+                                "price": 130000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-01-23T13:50:10.001Z",
+                        "createdAt": "2024-01-23T13:50:10.002Z",
+                        "updatedAt": "2024-08-09T20:13:33.572Z",
+                        "__v": 0,
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e"
+                        ]
+                    },
+                    {
+                        "_id": "65afc42a78b042fc6f6da2ec",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": 75,
+                        "relatedDynamicDiscountForItems": [],
+                        "name": "ایس کارامل ماکیاتو",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": false,
+                        "description": "عصاره گیری شده از قهوه 100% عربیکا ",
+                        "images": [
+                            {
+                                "_id": "65f2fbb07090ca38ab673aa7",
+                                "fileName": "icedmakiato-1710422957846.jpg",
+                                "urlLocation": "https://item-images.s3.ir-thr-at1.arvanstorage.ir/icedmakiato-1710422957846.jpg"
+                            }
+                        ],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "65afbea978b0427d006d9253",
+                        "parentSubcategory": "65afc09b78b042843e6d98a7",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "65afc42a78b042f4396da2ed",
+                                "title": "",
+                                "price": 145000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-01-23T13:50:34.611Z",
+                        "createdAt": "2024-01-23T13:50:34.612Z",
+                        "updatedAt": "2024-08-09T20:13:52.459Z",
+                        "__v": 0,
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e"
+                        ]
+                    },
+                    {
+                        "_id": "65afc43978b0422bc36da31f",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": 76,
+                        "relatedDynamicDiscountForItems": [],
+                        "name": "ایس موکا",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": false,
+                        "description": "عصاره گیری شده از قهوه 100% عربیکا ",
+                        "images": [
+                            {
+                                "_id": "65f2fd347090caba22673fd1",
+                                "fileName": "icedmoca-1710423345356.jpg",
+                                "urlLocation": "https://item-images.s3.ir-thr-at1.arvanstorage.ir/icedmoca-1710423345356.jpg"
+                            }
+                        ],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "65afbea978b0427d006d9253",
+                        "parentSubcategory": "65afc09b78b042843e6d98a7",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "65afc43978b0424a766da320",
+                                "title": "",
+                                "price": 145000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-01-23T13:50:49.877Z",
+                        "createdAt": "2024-01-23T13:50:49.878Z",
+                        "updatedAt": "2024-08-09T20:14:12.909Z",
+                        "__v": 0,
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "65afbebe78b04214646d925e",
+        "name": "نوشیدنی گرم بر پایه شیر و دمنوش ",
+        "showCategoryName": true,
+        "description": "",
+        "status": true,
+        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+        "subcategories": [
+            {
+                "_id": "65afc0a578b042c5026d98ab",
+                "name": "نوشیدنی گرم بر پایه شیر و دمنوش ",
+                "showSubcategoryName": true,
+                "description": "",
+                "status": true,
+                "order": 10,
+                "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                "parentCategory": "65afbebe78b04214646d925e",
+                "items": [
+                    {
+                        "_id": "65b25b7e11800373cb36560b",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": 33,
+                        "relatedDynamicDiscountForItems": [],
+                        "name": "دمنوش هل و زعفران",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": false,
+                        "description": "",
+                        "images": [
+                            {
+                                "_id": "65f3058c7090ca89e7674ecf",
+                                "fileName": "hellSafron-1710425481129.jpg",
+                                "urlLocation": "https://item-images.s3.ir-thr-at1.arvanstorage.ir/hellSafron-1710425481129.jpg"
+                            }
+                        ],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "65afbebe78b04214646d925e",
+                        "parentSubcategory": "65afc0a578b042c5026d98ab",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "65b25b7e118003210a36560c",
+                                "title": "",
+                                "price": 140000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-01-25T13:00:46.847Z",
+                        "createdAt": "2024-01-25T13:00:46.849Z",
+                        "updatedAt": "2024-09-13T08:14:35.808Z",
+                        "__v": 0,
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e"
+                        ]
+                    },
+                    {
+                        "_id": "65afc45b78b0422bb56da586",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": 65,
+                        "relatedDynamicDiscountForItems": [],
+                        "name": "چای ایرانی ",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": false,
+                        "description": "",
+                        "images": [
+                            {
+                                "_id": "65f30e1e7090ca1c126769f2",
+                                "fileName": "chai-1710427676661.jpg",
+                                "urlLocation": "https://item-images.s3.ir-thr-at1.arvanstorage.ir/chai-1710427676661.jpg"
+                            }
+                        ],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "65afbebe78b04214646d925e",
+                        "parentSubcategory": "65afc0a578b042c5026d98ab",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "65afc45b78b04273646da587",
+                                "title": "",
+                                "price": 75000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-01-23T13:51:23.856Z",
+                        "createdAt": "2024-01-23T13:51:23.858Z",
+                        "updatedAt": "2024-05-24T08:37:21.406Z",
+                        "__v": 0,
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e"
+                        ]
+                    },
+                    {
+                        "_id": "65afc46b78b04241736da987",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": 66,
+                        "relatedDynamicDiscountForItems": [],
+                        "name": "شیر گرم",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": false,
+                        "description": "",
+                        "images": [
+                            {
+                                "_id": "65f30ae07090ca5a876760e5",
+                                "fileName": "shire-garm-1710426845682.jpg",
+                                "urlLocation": "https://item-images.s3.ir-thr-at1.arvanstorage.ir/shire-garm-1710426845682.jpg"
+                            }
+                        ],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "65afbebe78b04214646d925e",
+                        "parentSubcategory": "65afc0a578b042c5026d98ab",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "65afc46b78b04240346da988",
+                                "title": "",
+                                "price": 80000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-01-23T13:51:39.737Z",
+                        "createdAt": "2024-01-23T13:51:39.739Z",
+                        "updatedAt": "2024-08-22T12:01:37.190Z",
+                        "__v": 0,
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e"
+                        ]
+                    },
+                    {
+                        "_id": "65afc48b78b04276236daa3b",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": 67,
+                        "relatedDynamicDiscountForItems": [],
+                        "name": "دمنوش چای سبز و یاس ",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": false,
+                        "description": "",
+                        "images": [
+                            {
+                                "_id": "65f305467090ca6537674cd7",
+                                "fileName": "sabzoyas-1710425411581.jpg",
+                                "urlLocation": "https://item-images.s3.ir-thr-at1.arvanstorage.ir/sabzoyas-1710425411581.jpg"
+                            }
+                        ],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "65afbebe78b04214646d925e",
+                        "parentSubcategory": "65afc0a578b042c5026d98ab",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "65afc48b78b04232746daa3c",
+                                "title": "",
+                                "price": 110000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-01-23T13:52:11.896Z",
+                        "createdAt": "2024-01-23T13:52:11.897Z",
+                        "updatedAt": "2024-05-24T08:29:34.343Z",
+                        "__v": 0,
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e"
+                        ]
+                    },
+                    {
+                        "_id": "65afc4de78b0425f026dac18",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": 68,
+                        "relatedDynamicDiscountForItems": [],
+                        "name": "دمنوش چای سبز اولانگ ",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": false,
+                        "description": "",
+                        "images": [
+                            {
+                                "_id": "65f305597090cace22674d8c",
+                                "fileName": "sabzoolang-1710425429205.jpg",
+                                "urlLocation": "https://item-images.s3.ir-thr-at1.arvanstorage.ir/sabzoolang-1710425429205.jpg"
+                            }
+                        ],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "65afbebe78b04214646d925e",
+                        "parentSubcategory": "65afc0a578b042c5026d98ab",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "65afc4de78b042564b6dac19",
+                                "title": "",
+                                "price": 120000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-01-23T13:53:34.362Z",
+                        "createdAt": "2024-01-23T13:53:34.364Z",
+                        "updatedAt": "2024-05-24T08:43:18.561Z",
+                        "__v": 0,
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e"
+                        ]
+                    },
+                    {
+                        "_id": "65afc4a078b0428be66daada",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": 69,
+                        "relatedDynamicDiscountForItems": [],
+                        "name": "دمنوش انبه و بابونه ",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": false,
+                        "description": "",
+                        "images": [
+                            {
+                                "_id": "65f2ff8e7090cae2fe674333",
+                                "fileName": "damnooshanbe-1710423947557.jpg",
+                                "urlLocation": "https://item-images.s3.ir-thr-at1.arvanstorage.ir/damnooshanbe-1710423947557.jpg"
+                            }
+                        ],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "65afbebe78b04214646d925e",
+                        "parentSubcategory": "65afc0a578b042c5026d98ab",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "65afc4a078b042abae6daadb",
+                                "title": "",
+                                "price": 145000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-01-23T13:52:32.999Z",
+                        "createdAt": "2024-01-23T13:52:33.001Z",
+                        "updatedAt": "2024-05-24T08:30:23.895Z",
+                        "__v": 0,
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e"
+                        ]
+                    },
+                    {
+                        "_id": "65afc4be78b0429cf36dab79",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": 70,
+                        "relatedDynamicDiscountForItems": [],
+                        "name": "دمنوش گل گاو زبان و به لیمو",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": false,
+                        "description": "",
+                        "images": [
+                            {
+                                "_id": "65f3021d7090cabdf4674589",
+                                "fileName": "DSCF6054-1710424602288.jpg",
+                                "urlLocation": "https://item-images.s3.ir-thr-at1.arvanstorage.ir/DSCF6054-1710424602288.jpg"
+                            }
+                        ],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "65afbebe78b04214646d925e",
+                        "parentSubcategory": "65afc0a578b042c5026d98ab",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "65afc4be78b04254996dab7a",
+                                "title": "",
+                                "price": 95000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-01-23T13:53:02.641Z",
+                        "createdAt": "2024-01-23T13:53:02.643Z",
+                        "updatedAt": "2024-07-29T09:57:58.147Z",
+                        "__v": 0,
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e"
+                        ]
+                    },
+                    {
+                        "_id": "65afc50f78b04246eb6dadcf",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": 71,
+                        "relatedDynamicDiscountForItems": [],
+                        "name": "هات چاکلت",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": false,
+                        "description": "",
+                        "images": [
+                            {
+                                "_id": "65f30cca7090ca66a467666d",
+                                "fileName": "hotChocolate-1710427336727.jpg",
+                                "urlLocation": "https://item-images.s3.ir-thr-at1.arvanstorage.ir/hotChocolate-1710427336727.jpg"
+                            }
+                        ],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "65afbebe78b04214646d925e",
+                        "parentSubcategory": "65afc0a578b042c5026d98ab",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "65afc50f78b0427d7f6dadd0",
+                                "title": "",
+                                "price": 125000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-01-23T13:54:23.825Z",
+                        "createdAt": "2024-01-23T13:54:23.826Z",
+                        "updatedAt": "2024-05-24T08:37:33.680Z",
+                        "__v": 0,
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e"
+                        ]
+                    },
+                    {
+                        "_id": "65afc4f478b04252d26dac25",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": 72,
+                        "relatedDynamicDiscountForItems": [],
+                        "name": "ماسالا ",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": false,
+                        "description": "",
+                        "images": [
+                            {
+                                "_id": "65f30cd27090caa7966766de",
+                                "fileName": "masala-1710427346077.jpg",
+                                "urlLocation": "https://item-images.s3.ir-thr-at1.arvanstorage.ir/masala-1710427346077.jpg"
+                            }
+                        ],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "65afbebe78b04214646d925e",
+                        "parentSubcategory": "65afc0a578b042c5026d98ab",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "65afc4f478b042fb106dac26",
+                                "title": "",
+                                "price": 125000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-01-23T13:53:56.435Z",
+                        "createdAt": "2024-01-23T13:53:56.436Z",
+                        "updatedAt": "2024-05-24T08:33:06.762Z",
+                        "__v": 0,
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "65afbec878b042e54e6d9270",
+        "name": "نوشیدنی سرد ",
+        "showCategoryName": true,
+        "description": "",
+        "status": true,
+        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+        "subcategories": [
+            {
+                "_id": "65afc0ae78b042ef496d98af",
+                "name": "نوشیدنی سرد ",
+                "showSubcategoryName": true,
+                "description": "",
+                "status": true,
+                "order": 9,
+                "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                "parentCategory": "65afbec878b042e54e6d9270",
+                "items": [
+                    {
+                        "_id": "6664d95bc206f2390aab70ce",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": -1,
+                        "relatedDynamicDiscountForItems": [],
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e",
+                            "664ba2e60fd988022d442854"
+                        ],
+                        "name": "چای قرمز و پرتقال",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": true,
+                        "description": "",
+                        "images": [
+                            {
+                                "_id": "6697ce7054538a3b8c3f894f",
+                                "fileName": "chaisardport-web-1721224813325.jpg",
+                                "urlLocation": "https://item-images.s3.ir-thr-at1.arvanstorage.ir/chaisardport-web-1721224813325.jpg"
+                            }
+                        ],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "65afbec878b042e54e6d9270",
+                        "parentSubcategory": "65afc0ae78b042ef496d98af",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "6664d95bc206f2226cab70cf",
+                                "title": "",
+                                "price": 160000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-06-08T22:21:15.294Z",
+                        "createdAt": "2024-06-08T22:21:15.296Z",
+                        "updatedAt": "2024-08-05T16:51:28.070Z",
+                        "__v": 0
+                    },
+                    {
+                        "_id": "65afc55778b042fdbf6db1c9",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": 62,
+                        "relatedDynamicDiscountForItems": [],
+                        "name": "لیموناد",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": false,
+                        "description": "",
+                        "images": [
+                            {
+                                "_id": "65f5c3307090ca3f876a862e",
+                                "fileName": "lemonade-1710605095065.jpg",
+                                "urlLocation": "https://item-images.s3.ir-thr-at1.arvanstorage.ir/lemonade-1710605095065.jpg"
+                            }
+                        ],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "65afbec878b042e54e6d9270",
+                        "parentSubcategory": "65afc0ae78b042ef496d98af",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "65afc55778b04201f36db1ca",
+                                "title": "",
+                                "price": 125000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-01-23T13:55:35.222Z",
+                        "createdAt": "2024-01-23T13:55:35.223Z",
+                        "updatedAt": "2024-08-06T11:03:43.223Z",
+                        "__v": 0,
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e"
+                        ]
+                    },
+                    {
+                        "_id": "65afc56a78b04268c76db1e2",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": 63,
+                        "relatedDynamicDiscountForItems": [],
+                        "name": "چای سرد",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": false,
+                        "description": "",
+                        "images": [
+                            {
+                                "_id": "65f5c3577090ca05da6a86f9",
+                                "fileName": "chai-sard-1710605141709.jpg",
+                                "urlLocation": "https://item-images.s3.ir-thr-at1.arvanstorage.ir/chai-sard-1710605141709.jpg"
+                            }
+                        ],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "65afbec878b042e54e6d9270",
+                        "parentSubcategory": "65afc0ae78b042ef496d98af",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "65afc56a78b04263c66db1e3",
+                                "title": "",
+                                "price": 125000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-01-23T13:55:54.999Z",
+                        "createdAt": "2024-01-23T13:55:55.003Z",
+                        "updatedAt": "2024-08-06T11:03:45.532Z",
+                        "__v": 0,
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e"
+                        ]
+                    },
+                    {
+                        "_id": "65afc58778b042e3b86db1f5",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": 64,
+                        "relatedDynamicDiscountForItems": [],
+                        "name": "زعفران لیمو",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": false,
+                        "description": "",
+                        "images": [
+                            {
+                                "_id": "65f5c3677090caec3f6a873a",
+                                "fileName": "zaferoonlemon-1710605157528.jpg",
+                                "urlLocation": "https://item-images.s3.ir-thr-at1.arvanstorage.ir/zaferoonlemon-1710605157528.jpg"
+                            }
+                        ],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "65afbec878b042e54e6d9270",
+                        "parentSubcategory": "65afc0ae78b042ef496d98af",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "65afc58778b04232946db1f6",
+                                "title": "",
+                                "price": 130000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-01-23T13:56:23.308Z",
+                        "createdAt": "2024-01-23T13:56:23.310Z",
+                        "updatedAt": "2024-08-06T11:03:47.949Z",
+                        "__v": 0,
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "65afbece78b0425f5f6d927f",
+        "name": "کیک",
+        "showCategoryName": true,
+        "description": "",
+        "status": true,
+        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+        "subcategories": [
+            {
+                "_id": "65afc0b578b0422aef6d98c1",
+                "name": "کیک ",
+                "showSubcategoryName": true,
+                "description": "",
+                "status": true,
+                "order": 8,
+                "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                "parentCategory": "65afbece78b0425f5f6d927f",
+                "items": [
+                    {
+                        "_id": "6688286df9d62a6694a084ec",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": 2,
+                        "relatedDynamicDiscountForItems": [],
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e",
+                            "664ba2e60fd988022d442854"
+                        ],
+                        "name": "گلت سیب",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": false,
+                        "description": "",
+                        "images": [],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "65afbece78b0425f5f6d927f",
+                        "parentSubcategory": "65afc0b578b0422aef6d98c1",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "6688286df9d62a3df2a084ed",
+                                "title": "",
+                                "price": 103000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-07-05T17:07:57.637Z",
+                        "createdAt": "2024-07-05T17:07:57.639Z",
+                        "updatedAt": "2024-09-15T15:09:58.105Z",
+                        "__v": 0
+                    },
+                    {
+                        "_id": "65afc5b378b04279b46db40e",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": 9,
+                        "relatedDynamicDiscountForItems": [],
+                        "name": "چیزکیک سن سباستین",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": false,
+                        "description": "",
+                        "images": [
+                            {
+                                "_id": "65fef4827090ca87a27127c7",
+                                "fileName": "san-sebastian-1711207551868.jpg",
+                                "urlLocation": "https://item-images.s3.ir-thr-at1.arvanstorage.ir/san-sebastian-1711207551868.jpg"
+                            }
+                        ],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "65afbece78b0425f5f6d927f",
+                        "parentSubcategory": "65afc0b578b0422aef6d98c1",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "65afc5b378b04263a36db40f",
+                                "title": "",
+                                "price": 123000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-01-23T13:57:07.556Z",
+                        "createdAt": "2024-01-23T13:57:07.558Z",
+                        "updatedAt": "2024-09-16T13:01:06.012Z",
+                        "__v": 0,
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e"
+                        ]
+                    },
+                    {
+                        "_id": "65afc5c578b042c9cc6db45f",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": 10,
+                        "relatedDynamicDiscountForItems": [],
+                        "name": "چیزکیک کارامل",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": false,
+                        "description": "",
+                        "images": [
+                            {
+                                "_id": "65fef4947090cab4e47127f3",
+                                "fileName": "cheeseKarameli-1711207570789.jpg",
+                                "urlLocation": "https://item-images.s3.ir-thr-at1.arvanstorage.ir/cheeseKarameli-1711207570789.jpg"
+                            }
+                        ],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "65afbece78b0425f5f6d927f",
+                        "parentSubcategory": "65afc0b578b0422aef6d98c1",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "65afc5c578b04206e96db460",
+                                "title": "",
+                                "price": 117000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-01-23T13:57:25.323Z",
+                        "createdAt": "2024-01-23T13:57:25.325Z",
+                        "updatedAt": "2024-09-16T15:58:09.365Z",
+                        "__v": 0,
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e"
+                        ]
+                    },
+                    {
+                        "_id": "65afc62278b04238c36dba9b",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": 13,
+                        "relatedDynamicDiscountForItems": [],
+                        "name": "کیک سیب و گردوی کاراملی",
+                        "status": true,
+                        "countInStock": 1,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": false,
+                        "description": "با سیب کاراملی شده",
+                        "images": [
+                            {
+                                "_id": "6666f062c206f23021bf6054",
+                                "fileName": "sib-va-gerdoo-web-1718022235235.jpg",
+                                "urlLocation": "https://item-images.s3.ir-thr-at1.arvanstorage.ir/sib-va-gerdoo-web-1718022235235.jpg"
+                            }
+                        ],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "65afbece78b0425f5f6d927f",
+                        "parentSubcategory": "65afc0b578b0422aef6d98c1",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "65afc62278b042ffba6dba9c",
+                                "title": "",
+                                "price": 115000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-01-23T13:58:58.597Z",
+                        "createdAt": "2024-01-23T13:58:58.598Z",
+                        "updatedAt": "2024-09-16T17:02:29.843Z",
+                        "__v": 0,
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e"
+                        ]
+                    },
+                    {
+                        "_id": "66841d95f9d62a8d798f93ef",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": 14,
+                        "relatedDynamicDiscountForItems": [],
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e",
+                            "664ba2e60fd988022d442854"
+                        ],
+                        "name": "کیک هویج",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": false,
+                        "description": "",
+                        "images": [
+                            {
+                                "_id": "66a278a92429a553a79e8bbc",
+                                "fileName": "cake-havij-web-1721923749979.jpg",
+                                "urlLocation": "https://item-images.s3.ir-thr-at1.arvanstorage.ir/cake-havij-web-1721923749979.jpg"
+                            }
+                        ],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "65afbece78b0425f5f6d927f",
+                        "parentSubcategory": "65afc0b578b0422aef6d98c1",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "66841d95f9d62a31138f93f0",
+                                "title": "",
+                                "price": 110000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-07-02T15:32:37.742Z",
+                        "createdAt": "2024-07-02T15:32:37.744Z",
+                        "updatedAt": "2024-09-16T15:20:04.097Z",
+                        "__v": 0
+                    },
+                    {
+                        "_id": "65afc66678b042b2586dc64e",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": 15,
+                        "relatedDynamicDiscountForItems": [],
+                        "name": "برد پودینگ دارچینی",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": false,
+                        "description": "",
+                        "images": [
+                            {
+                                "_id": "65fef4fb7090cab6d4712d3c",
+                                "fileName": "pooding-1711207673579.jpg",
+                                "urlLocation": "https://item-images.s3.ir-thr-at1.arvanstorage.ir/pooding-1711207673579.jpg"
+                            }
+                        ],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "65afbece78b0425f5f6d927f",
+                        "parentSubcategory": "65afc0b578b0422aef6d98c1",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "65afc66678b042053e6dc64f",
+                                "title": "",
+                                "price": 108000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-01-23T14:00:06.303Z",
+                        "createdAt": "2024-01-23T14:00:06.305Z",
+                        "updatedAt": "2024-09-16T11:33:06.895Z",
+                        "__v": 0,
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e"
+                        ]
+                    },
+                    {
+                        "_id": "662cf295417ca6bc8d1a3e82",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": 16,
+                        "relatedDynamicDiscountForItems": [],
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e"
+                        ],
+                        "name": "برد پودینگ وانیلی",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": false,
+                        "description": "",
+                        "images": [
+                            {
+                                "_id": "663788d552f98dbb668775c6",
+                                "fileName": "poodingvanilla-1714915539504.jpg",
+                                "urlLocation": "https://item-images.s3.ir-thr-at1.arvanstorage.ir/poodingvanilla-1714915539504.jpg"
+                            }
+                        ],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "65afbece78b0425f5f6d927f",
+                        "parentSubcategory": "65afc0b578b0422aef6d98c1",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "662cf295417ca670e31a3e83",
+                                "title": "",
+                                "price": 108000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-04-27T12:41:57.830Z",
+                        "createdAt": "2024-04-27T12:41:57.831Z",
+                        "updatedAt": "2024-09-12T16:18:23.791Z",
+                        "__v": 0
+                    },
+                    {
+                        "_id": "65afc60078b04265ee6db530",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": 18,
+                        "relatedDynamicDiscountForItems": [],
+                        "name": "بیسکاتی",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": false,
+                        "description": "",
+                        "images": [
+                            {
+                                "_id": "65fef5087090ca8620712d6b",
+                                "fileName": "biskati-1711207686700.jpg",
+                                "urlLocation": "https://item-images.s3.ir-thr-at1.arvanstorage.ir/biskati-1711207686700.jpg"
+                            }
+                        ],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "65afbece78b0425f5f6d927f",
+                        "parentSubcategory": "65afc0b578b0422aef6d98c1",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "65afc60078b04248526db531",
+                                "title": "",
+                                "price": 40000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-01-23T13:58:24.940Z",
+                        "createdAt": "2024-01-23T13:58:24.942Z",
+                        "updatedAt": "2024-09-14T09:58:31.287Z",
+                        "__v": 0,
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e"
+                        ]
+                    },
+                    {
+                        "_id": "666d8362ad36c9778887fb85",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": 19,
+                        "relatedDynamicDiscountForItems": [],
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e",
+                            "664ba2e60fd988022d442854"
+                        ],
+                        "name": "موس شکلات",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": false,
+                        "description": "",
+                        "images": [
+                            {
+                                "_id": "6697d81154538a466f3fe782",
+                                "fileName": "oatmealchoco-1721227272064.jpg",
+                                "urlLocation": "https://item-images.s3.ir-thr-at1.arvanstorage.ir/oatmealchoco-1721227272064.jpg"
+                            }
+                        ],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "65afbece78b0425f5f6d927f",
+                        "parentSubcategory": "65afc0b578b0422aef6d98c1",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "666d8362ad36c9aed487fb86",
+                                "title": "",
+                                "price": 120000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-06-15T12:04:50.347Z",
+                        "createdAt": "2024-06-15T12:04:50.348Z",
+                        "updatedAt": "2024-09-16T15:00:04.057Z",
+                        "__v": 0
+                    },
+                    {
+                        "_id": "668bedf9f9d62ad7a8af26be",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": 24,
+                        "relatedDynamicDiscountForItems": [],
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e",
+                            "664ba2e60fd988022d442854"
+                        ],
+                        "name": "گلت آلو سیاه",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": false,
+                        "description": "",
+                        "images": [
+                            {
+                                "_id": "66a278442429a566d49e8780",
+                                "fileName": "galet-aloo-1721923649552.jpg",
+                                "urlLocation": "https://item-images.s3.ir-thr-at1.arvanstorage.ir/galet-aloo-1721923649552.jpg"
+                            }
+                        ],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "65afbece78b0425f5f6d927f",
+                        "parentSubcategory": "65afc0b578b0422aef6d98c1",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "668bedf9f9d62a55daaf26bf",
+                                "title": "",
+                                "price": 103000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-07-08T13:47:37.540Z",
+                        "createdAt": "2024-07-08T13:47:37.542Z",
+                        "updatedAt": "2024-09-16T15:31:08.946Z",
+                        "__v": 0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "65afbeda78b042c38c6d933b",
+        "name": "میان وعده ",
+        "showCategoryName": true,
+        "description": "",
+        "status": true,
+        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+        "subcategories": [
+            {
+                "_id": "65afc0be78b042695c6d9958",
+                "name": "میان وعده ",
+                "showSubcategoryName": true,
+                "description": "",
+                "status": true,
+                "order": 6,
+                "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                "parentCategory": "65afbeda78b042c38c6d933b",
+                "items": [
+                    {
+                        "_id": "66c741fa6582974a4b839349",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": -1,
+                        "relatedDynamicDiscountForItems": [],
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e",
+                            "664ba2e60fd988022d442854"
+                        ],
+                        "name": "فوکاچا بیکن و گوجه خشک",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": true,
+                        "description": "فوکاچا گوجه و زیتون، ۵۰ گرم بیکن، گوجه خشک، رزماری، پنیر خامه ای",
+                        "images": [
+                            {
+                                "_id": "66ddc5e2ecb478abca827088",
+                                "fileName": "IMG_5143-1725810135159.jpeg",
+                                "urlLocation": "https://item-images.s3.ir-thr-at1.arvanstorage.ir/IMG_5143-1725810135159.jpeg"
+                            }
+                        ],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "65afbeda78b042c38c6d933b",
+                        "parentSubcategory": "65afc0be78b042695c6d9958",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "66c741fa658297cdbd83934a",
+                                "title": "",
+                                "price": 195000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-08-22T13:49:46.164Z",
+                        "createdAt": "2024-08-22T13:49:46.171Z",
+                        "updatedAt": "2024-09-17T10:11:54.541Z",
+                        "__v": 0
+                    },
+                    {
+                        "_id": "66a10f8d2429a577e496b0fe",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": -1,
+                        "relatedDynamicDiscountForItems": [],
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e",
+                            "664ba2e60fd988022d442854"
+                        ],
+                        "name": "فوکاچا بوقلمون دودی",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": false,
+                        "description": "",
+                        "images": [
+                            {
+                                "_id": "66ae33124c05f06771b68fd2",
+                                "fileName": "focachio-1722692368107.jpg",
+                                "urlLocation": "https://item-images.s3.ir-thr-at1.arvanstorage.ir/focachio-1722692368107.jpg"
+                            }
+                        ],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "65afbeda78b042c38c6d933b",
+                        "parentSubcategory": "65afc0be78b042695c6d9958",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "66a10f8d2429a5f5f996b0ff",
+                                "title": "",
+                                "price": 175000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-07-24T14:28:29.009Z",
+                        "createdAt": "2024-07-24T14:28:29.013Z",
+                        "updatedAt": "2024-09-17T10:11:58.432Z",
+                        "__v": 0
+                    },
+                    {
+                        "_id": "65afc72878b0420d6e6dcf1d",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": 44,
+                        "relatedDynamicDiscountForItems": [],
+                        "name": "چای و کروسان",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": false,
+                        "description": "",
+                        "images": [
+                            {
+                                "_id": "65fefc6a7090cafc1c714487",
+                                "fileName": "croisschai-1711209576365.jpg",
+                                "urlLocation": "https://item-images.s3.ir-thr-at1.arvanstorage.ir/croisschai-1711209576365.jpg"
+                            }
+                        ],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "65afbeda78b042c38c6d933b",
+                        "parentSubcategory": "65afc0be78b042695c6d9958",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "65afc72878b042f5556dcf1e",
+                                "title": "",
+                                "price": 137000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-01-23T14:03:20.429Z",
+                        "createdAt": "2024-01-23T14:03:20.431Z",
+                        "updatedAt": "2024-09-16T16:33:58.648Z",
+                        "__v": 0,
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e"
+                        ]
+                    },
+                    {
+                        "_id": "65afc7a678b04257966dd582",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": 48,
+                        "relatedDynamicDiscountForItems": [],
+                        "name": "تست پنیر و گوجه",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": false,
+                        "description": "",
+                        "images": [
+                            {
+                                "_id": "65fefca57090ca7c3d71469e",
+                                "fileName": "panirgoje-1711209636255.jpg",
+                                "urlLocation": "https://item-images.s3.ir-thr-at1.arvanstorage.ir/panirgoje-1711209636255.jpg"
+                            }
+                        ],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "65afbeda78b042c38c6d933b",
+                        "parentSubcategory": "65afc0be78b042695c6d9958",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "65afc7a678b0425bfa6dd583",
+                                "title": "",
+                                "price": 165000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-01-23T14:05:26.263Z",
+                        "createdAt": "2024-01-23T14:05:26.264Z",
+                        "updatedAt": "2024-09-17T10:12:10.123Z",
+                        "__v": 0,
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e",
+                            "664ba2e60fd988022d442854"
+                        ]
+                    },
+                    {
+                        "_id": "65afc7c278b0423a6f6dd60e",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": 49,
+                        "relatedDynamicDiscountForItems": [],
+                        "name": "تست پنیر و گوجه و چای",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": false,
+                        "description": "",
+                        "images": [
+                            {
+                                "_id": "65fefcb27090cab7fa714776",
+                                "fileName": "panir-chai-1711209648169.jpg",
+                                "urlLocation": "https://item-images.s3.ir-thr-at1.arvanstorage.ir/panir-chai-1711209648169.jpg"
+                            }
+                        ],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "65afbeda78b042c38c6d933b",
+                        "parentSubcategory": "65afc0be78b042695c6d9958",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "65afc7c278b042f8816dd60f",
+                                "title": "",
+                                "price": 220000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-01-23T14:05:54.563Z",
+                        "createdAt": "2024-01-23T14:05:54.566Z",
+                        "updatedAt": "2024-09-17T10:12:06.126Z",
+                        "__v": 0,
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e",
+                            "664ba2e60fd988022d442854"
+                        ]
+                    },
+                    {
+                        "_id": "65afc76178b04265876dd193",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": 50,
+                        "relatedDynamicDiscountForItems": [],
+                        "name": "تست موز و بادام زمینی",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": false,
+                        "description": "",
+                        "images": [
+                            {
+                                "_id": "65fefcdd7090ca3898714a61",
+                                "fileName": "karebadoom-1711209691223.jpg",
+                                "urlLocation": "https://item-images.s3.ir-thr-at1.arvanstorage.ir/karebadoom-1711209691223.jpg"
+                            }
+                        ],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "65afbeda78b042c38c6d933b",
+                        "parentSubcategory": "65afc0be78b042695c6d9958",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "65afc76178b042da156dd194",
+                                "title": "",
+                                "price": 195000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-01-23T14:04:17.784Z",
+                        "createdAt": "2024-01-23T14:04:17.786Z",
+                        "updatedAt": "2024-09-17T10:12:18.167Z",
+                        "__v": 0,
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e",
+                            "664ba2e60fd988022d442854"
+                        ]
+                    },
+                    {
+                        "_id": "65afc77d78b04291e86dd2d7",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": 51,
+                        "relatedDynamicDiscountForItems": [],
+                        "name": "تست موز و بادام زمینی و قهوه امریکانو",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": false,
+                        "description": "",
+                        "images": [
+                            {
+                                "_id": "65fefcf77090ca21d8714bc1",
+                                "fileName": "badoomghahve-1711209717870.jpg",
+                                "urlLocation": "https://item-images.s3.ir-thr-at1.arvanstorage.ir/badoomghahve-1711209717870.jpg"
+                            }
+                        ],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "65afbeda78b042c38c6d933b",
+                        "parentSubcategory": "65afc0be78b042695c6d9958",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "65afc77d78b04245616dd2d8",
+                                "title": "",
+                                "price": 260000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-01-23T14:04:45.544Z",
+                        "createdAt": "2024-01-23T14:04:45.546Z",
+                        "updatedAt": "2024-09-17T10:12:14.488Z",
+                        "__v": 0,
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e",
+                            "664ba2e60fd988022d442854"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "65afbee778b0426a426d9403",
+        "name": "ساندویچ",
+        "showCategoryName": true,
+        "description": "",
+        "status": true,
+        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+        "subcategories": [
+            {
+                "_id": "65afc0c478b04230646d9961",
+                "name": "ساندویچ",
+                "showSubcategoryName": true,
+                "description": "",
+                "status": true,
+                "order": 5,
+                "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                "parentCategory": "65afbee778b0426a426d9403",
+                "items": []
+            }
+        ]
+    },
+    {
+        "_id": "66c742376582975441839415",
+        "name": "سالاد",
+        "showCategoryName": true,
+        "description": "",
+        "status": true,
+        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+        "subcategories": [
+            {
+                "_id": "66c7425865829731f8839492",
+                "name": "سالاد",
+                "showSubcategoryName": true,
+                "description": "",
+                "status": true,
+                "order": 7,
+                "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                "parentCategory": "66c742376582975441839415",
+                "items": [
+                    {
+                        "_id": "66c7434665829766b78397ae",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": -1,
+                        "relatedDynamicDiscountForItems": [],
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e",
+                            "664ba2e60fd988022d442854"
+                        ],
+                        "name": "فتوچینی دی استاته",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": true,
+                        "description": "فتوچینی سرد، زیتون سیاه، گوجه خشک، پیاز قرمز، ریحان ایتالیایی، گردو، پنیر کوزه، سس وینگرت",
+                        "images": [],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "66c742376582975441839415",
+                        "parentSubcategory": "66c7425865829731f8839492",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "66c7434665829732e48397af",
+                                "title": "",
+                                "price": 245000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-08-22T13:55:18.965Z",
+                        "createdAt": "2024-08-22T13:55:18.968Z",
+                        "updatedAt": "2024-09-17T10:15:45.965Z",
+                        "__v": 0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "65afbeed78b042751c6d940b",
+        "name": "پاستا ",
+        "showCategoryName": true,
+        "description": "",
+        "status": true,
+        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+        "subcategories": [
+            {
+                "_id": "65afc0ca78b042df2c6d9969",
+                "name": "پاستا",
+                "showSubcategoryName": true,
+                "description": "",
+                "status": true,
+                "order": 4,
+                "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                "parentCategory": "65afbeed78b042751c6d940b",
+                "items": [
+                    {
+                        "_id": "65afc82d78b0426d736dd7d3",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": 39,
+                        "relatedDynamicDiscountForItems": [],
+                        "name": "اسپاگتی کلاسیک",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": false,
+                        "description": "اسپاگتی، گوجه گیلاسی، سیر، روغن زیتون، ریحان ایتالیایی، پارمزان",
+                        "images": [
+                            {
+                                "_id": "65f5cb4b7090ca497a6a9f2b",
+                                "fileName": "spageticlassic-1710607176811.jpg",
+                                "urlLocation": "https://item-images.s3.ir-thr-at1.arvanstorage.ir/spageticlassic-1710607176811.jpg"
+                            }
+                        ],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "65afbeed78b042751c6d940b",
+                        "parentSubcategory": "65afc0ca78b042df2c6d9969",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "65afc82d78b04245896dd7d4",
+                                "title": "",
+                                "price": 235000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-01-23T14:07:41.581Z",
+                        "createdAt": "2024-01-23T14:07:41.583Z",
+                        "updatedAt": "2024-09-17T10:11:50.584Z",
+                        "__v": 0,
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e",
+                            "664ba2e60fd988022d442854"
+                        ]
+                    },
+                    {
+                        "_id": "65afc85a78b042656d6dd84d",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": 40,
+                        "relatedDynamicDiscountForItems": [],
+                        "name": "اسپاگتی بوکاتینی",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": false,
+                        "description": "اسپاگتی، قارچ دکمه، قارچ صدفی، قارچ شیتاکه، کره، گردو، سیر، پارمزان",
+                        "images": [
+                            {
+                                "_id": "660830757090ca10e37909a5",
+                                "fileName": "fotochini-1711812724298.jpg",
+                                "urlLocation": "https://item-images.s3.ir-thr-at1.arvanstorage.ir/fotochini-1711812724298.jpg"
+                            }
+                        ],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "65afbeed78b042751c6d940b",
+                        "parentSubcategory": "65afc0ca78b042df2c6d9969",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "65afc85a78b0421ef26dd84e",
+                                "title": "",
+                                "price": 270000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-01-23T14:08:26.929Z",
+                        "createdAt": "2024-01-23T14:08:26.932Z",
+                        "updatedAt": "2024-09-17T10:11:40.381Z",
+                        "__v": 0,
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e",
+                            "664ba2e60fd988022d442854"
+                        ]
+                    },
+                    {
+                        "_id": "65afc84378b042bfa96dd828",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": 41,
+                        "relatedDynamicDiscountForItems": [],
+                        "name": "فتوچینی کرمی با مرغ",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": false,
+                        "description": "فتوچینی، فیله مرغ، قارچ دکمه ای، سس بشامل، سیر، پارمزان",
+                        "images": [
+                            {
+                                "_id": "660830857090ca16fe7909b5",
+                                "fileName": "bocatini-1711812739479.jpg",
+                                "urlLocation": "https://item-images.s3.ir-thr-at1.arvanstorage.ir/bocatini-1711812739479.jpg"
+                            }
+                        ],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "65afbeed78b042751c6d940b",
+                        "parentSubcategory": "65afc0ca78b042df2c6d9969",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "65afc84378b0423a266dd829",
+                                "title": "",
+                                "price": 295000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-01-23T14:08:03.172Z",
+                        "createdAt": "2024-01-23T14:08:03.173Z",
+                        "updatedAt": "2024-09-17T10:11:47.074Z",
+                        "__v": 0,
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e",
+                            "664ba2e60fd988022d442854"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "65b141c51180035669326af8",
+        "name": "نان",
+        "showCategoryName": true,
+        "description": "",
+        "status": true,
+        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+        "subcategories": [
+            {
+                "_id": "65b141f6118003bbda326bb1",
+                "name": "نان",
+                "showSubcategoryName": true,
+                "description": "",
+                "status": true,
+                "order": 2,
+                "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                "parentCategory": "65b141c51180035669326af8",
+                "items": [
+                    {
+                        "_id": "6687f973f9d62a138a9f6e4e",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": -1,
+                        "relatedDynamicDiscountForItems": [],
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e",
+                            "664ba2e60fd988022d442854"
+                        ],
+                        "name": "گاتا",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": true,
+                        "description": "",
+                        "images": [
+                            {
+                                "_id": "669a417a54538a424246b6b5",
+                                "fileName": "gatta-web-1721385336842.jpg",
+                                "urlLocation": "https://item-images.s3.ir-thr-at1.arvanstorage.ir/gatta-web-1721385336842.jpg"
+                            }
+                        ],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "65b141c51180035669326af8",
+                        "parentSubcategory": "65b141f6118003bbda326bb1",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "6687f973f9d62a73c39f6e4f",
+                                "title": "",
+                                "price": 93000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-07-05T13:47:31.903Z",
+                        "createdAt": "2024-07-05T13:47:31.907Z",
+                        "updatedAt": "2024-09-16T12:04:25.471Z",
+                        "__v": 0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "667eeae2f9d62aa3e278aca5",
+        "name": "دانه قهوه",
+        "showCategoryName": true,
+        "description": "",
+        "status": true,
+        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+        "subcategories": [
+            {
+                "_id": "667eeaedf9d62afe1e78acb8",
+                "name": "دانه قهوه",
+                "showSubcategoryName": true,
+                "description": "",
+                "status": true,
+                "order": 0,
+                "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                "parentCategory": "667eeae2f9d62aa3e278aca5",
+                "items": [
+                    {
+                        "_id": "66d0c6fef7e6310bd18e48dc",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": -1,
+                        "relatedDynamicDiscountForItems": [],
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e",
+                            "664ba2e60fd988022d442854"
+                        ],
+                        "name": "دانه قهوه یمن بسته 100گرمی",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": true,
+                        "description": "",
+                        "images": [],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "667eeae2f9d62aa3e278aca5",
+                        "parentSubcategory": "667eeaedf9d62afe1e78acb8",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "66d0c6fef7e6310c568e48dd",
+                                "title": "",
+                                "price": 430000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-08-29T19:07:42.820Z",
+                        "createdAt": "2024-08-29T19:07:42.821Z",
+                        "updatedAt": "2024-08-29T19:07:42.821Z",
+                        "__v": 0
+                    },
+                    {
+                        "_id": "667eeb6cf9d62a455578adf4",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": -1,
+                        "relatedDynamicDiscountForItems": [],
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e",
+                            "664ba2e60fd988022d442854"
+                        ],
+                        "name": "دانه قهوه ترکیبی (۱۰۰ عربیکا)",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": false,
+                        "description": "بسته صد گرمی",
+                        "images": [],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "667eeae2f9d62aa3e278aca5",
+                        "parentSubcategory": "667eeaedf9d62afe1e78acb8",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "667eeb6cf9d62a0e2578adf5",
+                                "title": "",
+                                "price": 96000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-06-28T16:57:16.891Z",
+                        "createdAt": "2024-06-28T16:57:16.892Z",
+                        "updatedAt": "2024-08-17T14:22:47.165Z",
+                        "__v": 0
+                    },
+                    {
+                        "_id": "667eeb22f9d62aebe078ad60",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": -1,
+                        "relatedDynamicDiscountForItems": [],
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e",
+                            "664ba2e60fd988022d442854"
+                        ],
+                        "name": "دانه قهوه یمن بسته 250 گرمی",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": false,
+                        "description": "",
+                        "images": [],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "667eeae2f9d62aa3e278aca5",
+                        "parentSubcategory": "667eeaedf9d62afe1e78acb8",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "667eeb22f9d62ad32778ad61",
+                                "title": "",
+                                "price": 1050000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-06-28T16:56:02.977Z",
+                        "createdAt": "2024-06-28T16:56:02.978Z",
+                        "updatedAt": "2024-08-29T19:06:39.086Z",
+                        "__v": 0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "65afbefe78b0424f406d942a",
+        "name": "متفرقه ",
+        "showCategoryName": true,
+        "description": "",
+        "status": true,
+        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+        "subcategories": [
+            {
+                "_id": "65afc0d078b0427fe46d9973",
+                "name": "متفرقه ",
+                "showSubcategoryName": true,
+                "description": "",
+                "status": true,
+                "order": 3,
+                "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                "parentCategory": "65afbefe78b0424f406d942a",
+                "items": [
+                    {
+                        "_id": "65afc86f78b04257806dd861",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": 37,
+                        "relatedDynamicDiscountForItems": [],
+                        "name": "اب معدنی",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": false,
+                        "description": "",
+                        "images": [
+                            {
+                                "_id": "65fefdf87090ca85b171515a",
+                                "fileName": "ab-1711209974489.jpg",
+                                "urlLocation": "https://item-images.s3.ir-thr-at1.arvanstorage.ir/ab-1711209974489.jpg"
+                            }
+                        ],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "65afbefe78b0424f406d942a",
+                        "parentSubcategory": "65afc0d078b0427fe46d9973",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "65afc86f78b04250cc6dd862",
+                                "title": "",
+                                "price": 9000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-01-23T14:08:47.380Z",
+                        "createdAt": "2024-01-23T14:08:47.382Z",
+                        "updatedAt": "2024-08-19T07:04:59.760Z",
+                        "__v": 0,
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e"
+                        ]
+                    },
+                    {
+                        "_id": "65afc88578b04223f26dd880",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": 38,
+                        "relatedDynamicDiscountForItems": [],
+                        "name": "نوشیدنی مالت باربیکن",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": false,
+                        "description": "درصورت سفارش غذا، میان وعده و پاستا امکان سفارش وجود دارد.",
+                        "images": [
+                            {
+                                "_id": "65f5c3827090caf4886a8773",
+                                "fileName": "barbican-1710605184117.jpg",
+                                "urlLocation": "https://item-images.s3.ir-thr-at1.arvanstorage.ir/barbican-1710605184117.jpg"
+                            }
+                        ],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "65afbefe78b0424f406d942a",
+                        "parentSubcategory": "65afc0d078b0427fe46d9973",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "65afc88578b04260cd6dd881",
+                                "title": "",
+                                "price": 45000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-01-23T14:09:09.193Z",
+                        "createdAt": "2024-01-23T14:09:09.195Z",
+                        "updatedAt": "2024-09-15T10:13:59.081Z",
+                        "__v": 0,
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "65c5373d5c6be1580c2f8b07",
+        "name": "اتاق های کار ",
+        "showCategoryName": true,
+        "description": "",
+        "status": true,
+        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+        "subcategories": [
+            {
+                "_id": "65c537595c6be1d5442f8b11",
+                "name": "اتاق کار ",
+                "showSubcategoryName": true,
+                "description": "",
+                "status": true,
+                "order": 1,
+                "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                "parentCategory": "65c5373d5c6be1580c2f8b07",
+                "items": [
+                    {
+                        "_id": "65c5384e5c6be13cc52f8bd8",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": 0,
+                        "relatedDynamicDiscountForItems": [],
+                        "name": "اتاق کار 1",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": false,
+                        "description": "",
+                        "images": [],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "65c5373d5c6be1580c2f8b07",
+                        "parentSubcategory": "65c537595c6be1d5442f8b11",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "65c5384e5c6be161492f8bd9",
+                                "title": "",
+                                "price": 160000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-02-08T20:23:42.472Z",
+                        "createdAt": "2024-02-08T20:23:42.476Z",
+                        "updatedAt": "2024-08-28T11:37:21.729Z",
+                        "__v": 0,
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e"
+                        ]
+                    },
+                    {
+                        "_id": "65c538775c6be1a8ce2f8bf9",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": 1,
+                        "relatedDynamicDiscountForItems": [],
+                        "name": "اتاق کار 2",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": false,
+                        "description": "",
+                        "images": [],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "65c5373d5c6be1580c2f8b07",
+                        "parentSubcategory": "65c537595c6be1d5442f8b11",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "65c538775c6be14bd72f8bfa",
+                                "title": "",
+                                "price": 125000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-02-08T20:24:23.007Z",
+                        "createdAt": "2024-02-08T20:24:23.011Z",
+                        "updatedAt": "2024-08-28T11:37:33.504Z",
+                        "__v": 0,
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e"
+                        ]
+                    },
+                    {
+                        "_id": "65c5389a5c6be155862f8c1c",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": 2,
+                        "relatedDynamicDiscountForItems": [],
+                        "name": "اتاق کار 3",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": false,
+                        "description": "",
+                        "images": [],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "65c5373d5c6be1580c2f8b07",
+                        "parentSubcategory": "65c537595c6be1d5442f8b11",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "65c5389a5c6be1087f2f8c1d",
+                                "title": "",
+                                "price": 160000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-02-08T20:24:58.943Z",
+                        "createdAt": "2024-02-08T20:24:58.946Z",
+                        "updatedAt": "2024-08-28T11:37:42.128Z",
+                        "__v": 0,
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e"
+                        ]
+                    },
+                    {
+                        "_id": "65c538d95c6be16f602f8c5d",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": 3,
+                        "relatedDynamicDiscountForItems": [],
+                        "name": "اتاق کار 5",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": false,
+                        "description": "",
+                        "images": [],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "65c5373d5c6be1580c2f8b07",
+                        "parentSubcategory": "65c537595c6be1d5442f8b11",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "65c538d95c6be133212f8c5e",
+                                "title": "",
+                                "price": 250000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-02-08T20:26:01.054Z",
+                        "createdAt": "2024-02-08T20:26:01.057Z",
+                        "updatedAt": "2024-08-28T11:38:57.328Z",
+                        "__v": 0,
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e"
+                        ]
+                    },
+                    {
+                        "_id": "66782205c8c6dcfafeef226f",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": 4,
+                        "relatedDynamicDiscountForItems": [],
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e",
+                            "664ba2e60fd988022d442854"
+                        ],
+                        "name": "اتاق کار ۱ (روزانه)",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": false,
+                        "description": "",
+                        "images": [],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "65c5373d5c6be1580c2f8b07",
+                        "parentSubcategory": "65c537595c6be1d5442f8b11",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "66782205c8c6dc3e9fef2270",
+                                "title": "",
+                                "price": 560000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-06-23T13:24:21.685Z",
+                        "createdAt": "2024-06-23T13:24:21.687Z",
+                        "updatedAt": "2024-08-28T11:37:58.128Z",
+                        "__v": 0
+                    },
+                    {
+                        "_id": "66782260c8c6dc8d73ef2b64",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": 5,
+                        "relatedDynamicDiscountForItems": [],
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e",
+                            "664ba2e60fd988022d442854"
+                        ],
+                        "name": "اتاق کار ۲ (روزانه)",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": false,
+                        "description": "",
+                        "images": [],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "65c5373d5c6be1580c2f8b07",
+                        "parentSubcategory": "65c537595c6be1d5442f8b11",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "66782260c8c6dc2b48ef2b65",
+                                "title": "",
+                                "price": 420000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-06-23T13:25:52.709Z",
+                        "createdAt": "2024-06-23T13:25:52.710Z",
+                        "updatedAt": "2024-08-28T11:38:10.991Z",
+                        "__v": 0
+                    },
+                    {
+                        "_id": "66782296c8c6dc6e53ef2e7e",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": 6,
+                        "relatedDynamicDiscountForItems": [],
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e",
+                            "664ba2e60fd988022d442854"
+                        ],
+                        "name": "اتاق کار ۳ (روزانه)",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": false,
+                        "description": "",
+                        "images": [],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "65c5373d5c6be1580c2f8b07",
+                        "parentSubcategory": "65c537595c6be1d5442f8b11",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "66782296c8c6dc2248ef2e7f",
+                                "title": "",
+                                "price": 560000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-06-23T13:26:46.084Z",
+                        "createdAt": "2024-06-23T13:26:46.086Z",
+                        "updatedAt": "2024-08-28T11:38:20.614Z",
+                        "__v": 0
+                    },
+                    {
+                        "_id": "667822bdc8c6dc4f39ef31f7",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": 7,
+                        "relatedDynamicDiscountForItems": [],
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e",
+                            "664ba2e60fd988022d442854"
+                        ],
+                        "name": "اتاق کار ۵ (روزانه)",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": false,
+                        "description": "",
+                        "images": [],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "65c5373d5c6be1580c2f8b07",
+                        "parentSubcategory": "65c537595c6be1d5442f8b11",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "667822bdc8c6dc202aef31f8",
+                                "title": "",
+                                "price": 820000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-06-23T13:27:25.986Z",
+                        "createdAt": "2024-06-23T13:27:25.988Z",
+                        "updatedAt": "2024-08-28T11:38:45.179Z",
+                        "__v": 0
+                    },
+                    {
+                        "_id": "65c538f35c6be1db822f8c6b",
+                        "isPreferenceItem": false,
+                        "isExtraItem": false,
+                        "relatedExtraGroups": [],
+                        "relatedPreferenceGroups": [],
+                        "referredToExtraGroups": [],
+                        "referredToPreferenceGroups": [],
+                        "itemOrder": 8,
+                        "relatedDynamicDiscountForItems": [],
+                        "name": "سالن نشست",
+                        "status": true,
+                        "countInStock": null,
+                        "tableService": true,
+                        "collectionService": true,
+                        "deliveryService": false,
+                        "description": "",
+                        "images": [],
+                        "parentVenue": "65aa57e9ee72c3d4a2e45f4a",
+                        "parentCategory": "65c5373d5c6be1580c2f8b07",
+                        "parentSubcategory": "65c537595c6be1d5442f8b11",
+                        "prices": [
+                            {
+                                "status": true,
+                                "discountPercent": null,
+                                "_id": "65c538f35c6be1338c2f8c6c",
+                                "title": "",
+                                "price": 520000
+                            }
+                        ],
+                        "extraItemPrices": [],
+                        "date": "2024-02-08T20:26:27.447Z",
+                        "createdAt": "2024-02-08T20:26:27.449Z",
+                        "updatedAt": "2024-08-28T11:39:10.251Z",
+                        "__v": 0,
+                        "receiptPrinters": [
+                            "65aa7e22ee72c30ca6e4c57e"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

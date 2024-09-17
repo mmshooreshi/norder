@@ -1,18 +1,18 @@
+<!-- /Users/mamthenebo/me/Help/mamad/norder/components/MenuItem.vue -->
 <template>
   <div 
     @click="selectItem" 
-    class="bg-background dark:bg-dark-background shadow-md rounded-lg overflow-hidden transform transition hover:scale-100 cursor-pointer scale-95 -my-2"
+    class="menu-item bg-background dark:bg-dark-background shadow-md rounded-lg overflow-hidden transform transition hover:scale-105 cursor-pointer"
   >
     <img 
       :src="item.strMealThumb" 
       :alt="item.strMeal" 
-      class="w-full h-40 object-cover" 
+      class="item-image w-full h-40 object-cover" 
     />
     <div class="p-4 pr-3">
       <h3 class="text-lg font-semibold mb-2 flex justify-between">
         {{ item.strMeal }}
         <span class="text-sm font-normal text-primary dark:text-dark-accent whitespace-nowrap">
-          <!-- {{ $t('global.price') }}: -->
           {{ formatPrice(getPrice(item)) }} {{ $t('global.price_unit') }}
         </span>
       </h3>
@@ -32,7 +32,6 @@ const { locale, t } = useI18n();
 const emits = defineEmits(['select']);
 
 function selectItem() {
-  // Emit the 'select' event with the clicked item
   emits('select', props.item);
 }
 
@@ -44,8 +43,26 @@ function formatPrice(amount) {
   return Number(amount).toLocaleString(locale.value, {
     minimumFractionDigits: 0,
     maximumFractionDigits: 0,
-    useGrouping: true, // Ensures comma separation for thousands
+    useGrouping: true,
   });
 }
-
 </script>
+
+<style scoped>
+.menu-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.item-image {
+  transition: filter 0.3s ease;
+}
+
+.menu-item:hover .item-image {
+  filter: brightness(0.9);
+}
+</style>

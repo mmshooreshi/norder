@@ -1,6 +1,6 @@
+<!-- /Users/mamthenebo/me/Help/mamad/norder/components/modal.vue -->
 <template>
-  <div ref="modalContent overflow-visible"
-    class="modal-content bg-background dark:bg-dark-background p-4 pt-6 rounded-lg w-full max-w-lg relative mt-2 mb-2 shadow-lg overflow-visible">
+  <div ref="modalContent" class="modal-content bg-background dark:bg-dark-background p-4 pt-6 rounded-lg w-full max-w-lg relative mt-2 mb-2 shadow-lg overflow-visible">
     <button 
       class="close-button absolute top-2 right-2 text-red-500 text-lg rounded-lg p-1 transition-transform duration-300 ease-out hover:bg-primary/25 dark:hover:bg-dark-primary/25" 
       @click="closeModal">
@@ -8,32 +8,38 @@
       <span class="hidden group-hover:block">{{ $t('global.close') }}</span>
     </button>
 
-    <img :src="item.strMealThumb" alt="Meal Image" class=" object-cover max-h-40 " />
-    <h2 class="text-2xl font-bold mb-4 mt-0">
+    <div class="max-h-40 min-h-40 mt-4 overflow-hidden relative w-full rounded-lg mainImg">
+      <div v-if="!imageLoaded" class="-mt-28 skeleton-loader absolute inset-0 bg-gray-200 dark:bg-gray-700 "></div>
+      <img v-if="imageLoaded" :src="item.strMealThumb" alt="Meal Image" class="-mt-28  object-cover w-full h-full" @load="onImageLoad" />
+    </div>
+
+    <!-- <img :src="item.strMealThumb" alt="Meal Image" class="object-cover max-h-40 w-full rounded-lg" /> -->
+    <h2 class="text-2xl font-bold mb-2 mt-2 mx-auto">
       {{ item.strMeal }}
     </h2>
 
-    <div
-      class="animated-gradient text-white font-bold py-2 mb-4 px-4 mx-4 cursor-pointer max-w-full rounded-lg hover:bg-red/10 transform hover:scale-105">
+    <div class="animated-gradient text-white font-bold py-0 pb-1 mb-4 px-4 mx-4 cursor-pointer max-w-full rounded-lg hover:bg-red/10 transform hover:scale-105">
       {{ formatPrice(item.price) }} {{ $t('global.price_unit') }}
     </div>
 
     <Tab :tabs="tabs">
       <template #Ingredients>
-        <ul class="px-4 my-0 pt-2 pb-6 max-h-60 mx-0 overflow-auto overflow-x-hidden">
+        <div class="max-h-56 overflow-y-scroll">
+        <ul class="px-4 mx-0 pt-2 pb-4  overflow-x-hidden">
           <li v-for="(ingredient, index) in ingredients" :key="index" 
-              class="flex justify-between items-center p-2 mb-1 ml-1 mr-2 bg-background-color rounded-lg hover:bg-highlight-color transition-transform duration-200 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary-color roww">
+              class="flex justify-between items-center p-2 mb-1 ml-1 mr-2 bg-gray-100 dark:bg-gray-800 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 transition-transform duration-200 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary roww">
             <span>{{ ingredient }}</span>
-            <span class="ltr">
+            <span class="ltr flex items-center">
               <span class="text-blue-500">{{ getNumberPart(measures[index]) }}</span>
               <span class="text-gray-500 text-sm mx-1">{{ getUnitPart(measures[index]) }}</span>
             </span>
           </li>
         </ul>
+      </div>
       </template>
 
       <template #Instructions>
-        <p class="mb-0 pt-4 text-sm max-h-60 ltr pr-4 pl-2 pb-4 text-justify overflow-auto rounded-lg">
+        <p class="max-h-56 py-4 text-sm ltr pr-4 pl-2 text-justify overflow-auto rounded-lg">
           {{ item.strInstructions }}
         </p>
       </template>
@@ -48,10 +54,8 @@
 
       <template #Source>
         <div class="mt-4 mb-6 flex gap-4">
-          <a v-if="item.strYoutube" :href="item.strYoutube" target="_blank" class="text-blue-500 underline">{{
-            $t('global.watch') }}</a>
-          <a v-if="item.strSource" :href="item.strSource" target="_blank" class="text-blue-500 underline">{{
-            $t('global.source') }}</a>
+          <a v-if="item.strYoutube" :href="item.strYoutube" target="_blank" class="text-blue-500 underline">{{ $t('global.watch') }}</a>
+          <a v-if="item.strSource" :href="item.strSource" target="_blank" class="text-blue-500 underline">{{ $t('global.source') }}</a>
         </div>
       </template>
     </Tab>
@@ -81,7 +85,7 @@ const { locale, t } = useI18n();
 const directionClass = computed(() => (locale.value === 'fa' ? 'rtl' : 'ltr'));
 
 const modalContent = ref(null);
-const isFullscreen = ref(false); // Add this line for fullscreen state
+const isFullscreen = ref(false);
 
 const tabFields = ['Ingredients', 'Instructions', 'Tags', 'Source'];
 const tabs = computed(() => tabFields.map(field => ({
@@ -94,6 +98,9 @@ const item = ref(props.item);
 watch(() => props.item, (newItem) => {
   item.value = newItem;
   console.log('Updated item:', newItem); // Debugging statement
+  imageLoaded.value = false; // Reset image loaded state when item changes
+  preloadImage(newItem.strMealThumb);
+
 });
 
 function getNumberPart(measure) {
@@ -143,12 +150,31 @@ function toggleFullscreen() {
   isFullscreen.value = !isFullscreen.value;
 }
 
+
+const imageLoaded = ref(false);
+
+function onImageLoad() {
+  imageLoaded.value = true;
+}
+
+function preloadImage(src) {
+  const img = new Image();
+  img.src = src;
+  img.onload = () => {
+    imageLoaded.value = true;
+  };
+}
+
 onMounted(async () => {
+  preloadImage(item.value.strMealThumb);
+
   window.addEventListener('keydown', handleKeydown);
   await nextTick();
   if (modalContent.value) {
     spring(100, { opacity: 1, transform: 'translateY(0)' }, { from: { opacity: 0, transform: 'translateY(-20px)' } });
   }
+
+
 });
 
 onUnmounted(() => {
@@ -159,7 +185,6 @@ onClickOutside(modalContent, () => {
   closeModal();
 });
 </script>
-
 
 <style lang="scss" scoped>
 $primary-color: #1e8fff;
@@ -268,17 +293,15 @@ $bezier: cubic-bezier(0.68, -0.55, 0.27, 1.55);
   }
 }
 
-h2, .text-md, .tab-content, button {
+h2, .text-md, .tab-content,  button , .mainImg {
   animation: jelly 1s ease-in-out backwards;
+}
+.mainImg{
+  animation-delay: 0.1s;
 }
 
 h2 {
-  animation-delay: 0.1s;
-}
-
-img {
-  animation: jelly 0.5s ease-in-out backwards;
-  animation-delay: 0.1s;
+  animation-delay: 0.3s;
 }
 
 .text-md {
@@ -311,15 +334,6 @@ button {
 .jelly-enter, .jelly-leave-to {
   transform: scale(0);
   height: 0;
-}
-
-@keyframes tab-highlight {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
 }
 
 @keyframes jelly {
@@ -359,13 +373,11 @@ button {
   }
 
   &:active {
-    // transform: scale(0.97);
     background-color: darken($background-color, 10%);
     transition: transform 0.1s $bezier, background-color 0.1s ease-in-out;
   }
 
   &:focus {
-    // outline: none;
     box-shadow: 0 0 0 3px rgba($primary-color, 0.5);
     transition: box-shadow 0.3s ease-in-out;
   }
@@ -388,73 +400,20 @@ button {
   }
 }
 
-h2 {
-  cursor: pointer;
-  transition: transform 0.1s ease-in-out, padding 0.3s ease-in-out;
-  border-radius: 5px;
-  width: 100%;
-  height: fit-content;
-  padding: 2%;
-  text-align: center;
-  z-index: 10;
-  background: linear-gradient(270deg, #b0acac4d, #6f6e7230);
-  transition: transform 0.3s $bezier, background-color 0.2s ease-in-out, filter 0.5s ease, height 0.5s ease, margin 0.5s ease;
-}
-
-h2:hover {
-  background: linear-gradient(180deg, #4c4c4ce7, #600cc1a1);
-}
-
-img {
-  background-color: $background-color;
-  margin: 1rem;
-  cursor: pointer;
-  filter: grayscale(100%);
-  max-height: 15vh !important;
-
-  // height: 30%;
-  border-radius: 5px;
-  // margin-top: 20px;
-  transition: transform 0.3s $bezier, background-color 0.3s ease-in-out, filter 0.5s ease, max-height 0.5s ease, margin 0.5s ease;
-}
-
-img:hover {
-  filter: grayscale(0%);
-  margin: 2rem;
-  max-height: 40vh !important;
-  transform: scale(1.05) translateY(-5px);
-  background-color: lighten($background-color, 90%);
-  transition: transform 0.3s $bezier, background-color 0.2s ease-in-out, filter 0.5s ease,  max-height 0.5s ease-in-out , margin 0.5s ease;
-}
-
-img:active {
-  // width: 500%;
-  // height: 500%;
-  max-height: 120vh !important;
-  // height: 50vh;
-  max-width: 100vw;
-  left: -15vw;
-  // top: 0px;
-
-z-index: 100;
-position: absolute;
-  filter: grayscale(50%);
-  // transform: scale(1.3) translateX(0%);
-  background-color: lighten($background-color, 90%);
-  transition: transform 0.3s $bezier, background-color 0.2s ease-in-out, filter 0.5s ease, height 0.5s ease, margin 0.5s ease;
-}
-
 .animated-gradient {
   background: linear-gradient(270deg, #ff000089, #7700ff15);
-  background-size: 160% 160%;
-  -webkit-animation: backgroundAnimation 10s ease infinite;
-  -moz-animation: backgroundAnimation 10s ease infinite;
-  animation: backgroundAnimation 10s ease infinite;
+  // background-size: 160% 160%;
+  -webkit-animation: backgroundAnimation 30s ease infinite;
+  -moz-animation: backgroundAnimation 30s ease infinite;
+  animation: backgroundAnimation 30s ease infinite;
   transition: all 1s ease;
+  background-size: 30% 30%;
+
 }
 
 .animated-gradient:hover {
-  background-size: 30% 30%;
+  // background-size: 30% 30%;
+  background-size: 160% 160%;
   transition: all 1s ease;
 }
 
@@ -488,25 +447,18 @@ position: absolute;
     100% { background-position: 0% 50%; }
 }
 
-.fullscreen-backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.8);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
+// /* Tailwind CSS doesn't support custom scrollbar styling out of the box, so we add it here */
+// ul::-webkit-scrollbar {
+//   width: 8px;
+// }
 
-.fullscreen-image {
-  max-width: 90%;
-  max-height: 90%;
-  border-radius: 10px;
-  transition: transform 0.3s $bezier, filter 0.3s ease-in-out;
-}
+// ul::-webkit-scrollbar-thumb {
+//   background-color: rgba(240, 220, 220, 0.2);
+//   border-radius: 4px;
+// }
 
+// ul::-webkit-scrollbar-track {
+//   background-color: rgba(255, 255, 255, 0.1);
+//   border-radius: 4px;
+// }
 </style>
-

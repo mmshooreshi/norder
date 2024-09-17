@@ -1,3 +1,4 @@
+ <!-- Users/mamthenebo/Me/Help/mamad/norder/pages/menu.vue -->
 <template>
   <!-- <Diana></Diana> -->
   <div :class="directionClass" class="scroll-smooth max-w-screen m-8 p-4 max-h-screen" @scroll="handleScroll">
